@@ -36,6 +36,7 @@ nav h1 {
 }
 header nav .onglets {
   margin: 3px 3% 3px 0;
+  font-size: 0.9em;
 }
 header nav .onglets a {
   text-decoration: none;
@@ -179,11 +180,19 @@ button span:hover {
   }
 }
 
-@media (max-width: 643px){
+@media only screen and (max-width: 643px){
   header nav {
       justify-content: center;
     }
-  
+  .welcome-text p {
+    font-size: 1.3em;
+    }
+    .sec1 h1 {
+      font-size: 3em;
+    }
+    header nav .onglets {
+      font-size: 0.7em;
+    }
 }
 
 /* ********** Section 2 ******** */
