@@ -347,7 +347,7 @@ button span:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-image: url(/Images/Singe-scooter/singecarre.png);
+  background-image: url(Images/Singe-scooter/singecarre.png);
   background-size: cover;
   backdrop-filter: blur(10px);
   background-position: 50% 0;
@@ -366,7 +366,7 @@ button span:hover {
   height: 100%;
   z-index: 1;
   opacity: 0.85;
-  background-image: url(/Images/fond-resto-indien/farinne-main.jpg);
+  background-image: url(Images/fond-resto-indien/farinne-main.jpg);
   background-size: cover;
 }
 .sec3 #ingredients{
@@ -383,7 +383,7 @@ button span:hover {
   height: 100%;
   z-index: 1;
   opacity: 0.85;
-  background-image: url(/Images/legumes/coupage-legumes.jpg);
+  background-image: url(Images/legumes/coupage-legumes.jpg);
   background-size: cover;
   
 }
