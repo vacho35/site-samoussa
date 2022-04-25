@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lusitana:wght@400;700&family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -14,6 +15,12 @@ body {
 
 h1 {
   font-family: "Dancing Script", cursive;
+}
+.trait{
+  height: 1px;
+  background-color: #caa26a;
+  width: 40%;
+  margin: 50px auto;
 }
 
 /* ********** Nav Bar ********** */
@@ -75,18 +82,10 @@ header nav .onglets a:hover {
   text-shadow: 3px 2px 3px #9c610ef5;
 }
 
-.welcome-text .trait {
-  height: 1px;
-  width: 40%;
-  margin: 7% auto;
-  background-color: #caa26a;
-  box-shadow: 1px 2px 2px black;
-}
-
 .welcome-text p {
   color: #d8af56;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-shadow: 1px 1px 2px #af6908;
 }
 
@@ -196,108 +195,8 @@ button span:hover {
 }
 
 /* ********** Section 2 ******** */
-/* .sec2{
-  margin: 0px 100px;
-}
-.sec2 .container .card{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.sec2 .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.sec2 .container .card .left{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid ;
-  text-align: center;
-  padding: 10px 21px;  
-}
-.sec2 .trait{
- height: 1px;
- background-color: #af6908;
- width: 50%;
- margin-top: 20px;
-}
-.sec2 .container .card .left h2{
-  font-size: 2.6rem;
-  line-height: 1.1;
-  font-weight: 400;
-  position: relative;
-  margin: 50px auto 0;
-  width: auto;
-}
-.sec2 .container .card .left p{
-  position: relative;
-    margin: 20px 0 50px;
-    font-size: 1rem;
-}
-.sec2 .logos {
-  display: flex;
-  justify-content: space-evenly;
-}
-.sec2 .logos img{
-  width: 20%;
-}
-.sec2 .container .card .right{
-  min-height: 50vh;
-  border: 1px solid ;
-  width: 100%;
-}
 
-.sec2 #services .right{
-  background-image: url(images/samoussa/samoussa-style.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 65vh;
-  min-width: 60%;
-}
-.sec2 #savoir .right{
-  background-image: url(images/fond-resto-indien/farinne-main.jpg);
-  background-size: cover;
-  background-position: 0px 16%;
-  background-repeat: no-repeat;
-  height: 80vh;
-  min-width: 50%;
-}
-.sec2 #ingredients .right{
-  background-image: url(images/legumes/coupage-legumes.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-width: 60%;
-  height: 70vh;
-}
-
-@media only screen and (max-width: 930px){
-  .sec2 .container .card{
-    flex-direction: column;
-    width: 100%;
-    max-width: 560px;
-    margin: 0 auto;
-    min-height: 600px;
-  }
-  .sec2 .container .card .right {
-    min-height: 100vh;
-}
-.sec2 #savoir{
-  flex-direction: column-reverse;
-}
-.sec2 .logos {
-  margin-bottom: 20px;
-}
-} */
-
-/* *********** Section3 ********** */
-
-.sec3 {
+.sec2 {
   width: 100%;
   height: 100vh;
   background-image: url(images/fond-resto-indien/fond-resto-classe-flou.png);
@@ -307,23 +206,21 @@ button span:hover {
   justify-content: center;
   align-items: center;
 }
-.sec3 .container h2{
+.sec2 .container h2{
   font-size: 1em;
   padding: 8px 0;
   z-index: 2;
 }
 
-.sec3 .container p{
+.sec2 .container p{
   font-size: 0.5em;
   padding: 9px;
 }
-.sec3 .container .card .text .trait{
-  height: 1px;
-  width: 35%;
+.sec2 .container .card .text .trait{
   background-color: #fbfbfb;
   margin: 5px auto;
 }
-.sec3 .container {
+.sec2 .container {
   width: 70%;
   height: 300px;
   display: flex;
@@ -332,7 +229,7 @@ button span:hover {
   align-items: center;
   flex-wrap: wrap;
 }
-.sec3 .container .card{
+.sec2 .container .card{
   height: 100%;
   text-align: center;
   max-width: 190px;
@@ -340,14 +237,16 @@ button span:hover {
   flex-direction: column;
   justify-content: flex-end;
   border-radius: 20px;
-  border: solid 1px #fbfbfb88;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgb(125, 125, 125);
+  border-left: 1px solid rgb(125, 125, 125);
   margin: 0 auto;
 }
-.sec3 #services{
+.sec2 #services{
   position: relative;
   overflow: hidden;
 }
-.sec3 #services:before{
+.sec2 #services:before{
   content: ' ';
   display: block;
   position: absolute;
@@ -361,11 +260,11 @@ button span:hover {
   backdrop-filter: blur(10px);
   background-position: 50% 0;
 }
-.sec3 #savoir{
+.sec2 #savoir{
   position: relative;
   overflow: hidden;
 }
-.sec3 #savoir:before{
+.sec2 #savoir:before{
   content: ' ';
   display: block;
   position: absolute;
@@ -378,11 +277,11 @@ button span:hover {
   background-image: url(images/fond-resto-indien/farinne-main.jpg);
   background-size: cover;
 }
-.sec3 #ingredients{
+.sec2 #ingredients{
   position: relative;
   overflow: hidden;
 }
-.sec3 #ingredients:before{
+.sec2 #ingredients:before{
   content: ' ';
   display: block;
   position: absolute;
@@ -396,12 +295,12 @@ button span:hover {
   background-size: cover;
   
 }
-.sec3 .container .card img{
+.sec2 .container .card img{
   width: 50px;
   margin: 0 8px;
 }
 
-.sec3 .container .card .text{
+.sec2 .container .card .text{
   color: #fbfbfb;
   letter-spacing: 0.005em;
   line-height: 13px;
@@ -422,16 +321,142 @@ button span:hover {
   border-radius: 20px;
 }
 @media only screen and (max-width: 840px){
-  .sec3 {
+  .sec2 {
     height: 160vh;
     align-items: flex-start;
   }
-  .sec3 .container .card {
+  .sec2 .container .card {
     margin: 10px auto;
 }
 }
 
 
+/* ********* Page Menus ********** */
+
+/* ******** Header ******** */
+
+.body2 {
+  background-image: url(images/fond-resto-indien/fond-resto-verre-cut.jpg);
+  background-attachment: fixed;
+  background-position-y: -1450px;
+  background-position-X: 1450px;
+}
+.nav2 {
+  position: inherit;
+}
+.sec3 {
+  width: 100%;
+  height: auto;
+  
+}
+
+.sec3 h1 {
+  text-align: center;
+  padding-top: 4%;
+  font-size: 3em;
+  color: #fbfbfb;
+  font-family: lusitana;
+} 
+
+.sec3 .trait {
+  background-color: #caa26a;
+  width: 30%;
+}
+.sec3 .image-resp {
+  margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    color: #111;
+    max-width: 90ch;
+}
+
+.sec3 .image-resp img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ********** Menus *********** */
+
+/* ******** Section 3 (Salé) ******** */
+
+.menus {
+    max-width: 1200px;
+    margin: 0 5%;
+    display: grid;
+    grid-gap: 1rem;
+    margin-bottom: 60px;
+  }
+  .card .menus-text h2 {
+    padding: 0 15px;
+    color: #fbfbfb;
+    font-size: 1.2em;
+    margin-bottom: 4%;
+  }
+  .card .menus-text h3 {
+    color: #F5F2ED;
+    font-size: 0.8em;
+    margin-bottom: 4%;
+  }
+  .card .menus-text h4 {
+    font-size: 1em;
+  }
+.menus-text{
+  border-top: 1px solid #fbfbfb;
+  border-left: 1px solid #fbfbfb;
+  border-bottom: 1px solid #fbfbfb;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+text-align: center;
+}
+.photo{
+  width: 60%;
+}
+  @media (min-width: 850px) {
+    .menus { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1150px){
+    .card .menus-text h2 {font-size: 1.6em;}
+    .card .menus-text h3 {font-size: 1.1em;}
+    .card .menus-text span {font-size: 1.2em;}
+  }
+  
+  .menus .photo{
+    height: 100%;
+  }
+.menus .photo img{
+  width: 100%;
+  display: block;
+}
+.menus .card{
+  display: flex;
+}
+
+/* ********* Section 4 (Sucré) ********** */
+
+.sec4 h1 {
+  text-align: center;
+  padding-top: 4%;
+  font-size: 3em;
+  color: #fbfbfb;
+  font-family: lusitana;
+} 
+.sec4 .bigtrait {
+  height: 1px;
+  background-color: #caa26a;
+  width: 70%;
+  margin: 40px auto;
+}
+.sec4 .trait {
+  background-color: #caa26a;
+  width: 30%;
+}
 
 
 
