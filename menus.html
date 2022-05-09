@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0cfccd0bcd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Menus de La Samousserie</title>
 </head>
@@ -11,18 +12,19 @@
 
     <!-- ******** Nav-Bar ******** -->
 
-    <header class="nav-bar">
-        <nav class="nav2">
-            <h1><a href="index.html#sec1">La Samousserie</a></h1>
-          <div class="onglets">
-            <a href="index.html#sec1">Accueil</a>
-            <a href="index.html#sec2">Nos services</a>
-            <a href="menus.html">Menu</a>
-            <a href="map.html">Contacts</a>
-            <a href="#">Commander</a>
-          </div>
-        </nav>
-      </header>
+    <header id="navbar" class="nav">
+        <h1><a href="index.html">La Samousserie</a></h1>
+        <div class="main-logo">
+          <a href="index.html"><img src="images/Singe-scooter/singe-modif31.png" alt="Logo singe qui conduit un scooter"></a>
+        </div>
+        <div class="onglets" >
+          <a href="index.html">Accueil</a>
+          <a href="index.html#sec2">Nos services</a>
+          <a href="menus.html">Menu</a>
+          <a href="#footer2">Contacts</a>
+          <a href="faq.html">Commander</a>
+        </div>
+    </header>
 
 <!-- ********** Menus *********** -->
 
@@ -139,7 +141,41 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- ********** Footer ********** -->
+
+    <footer class="footer" id="footer2">
+        <div class="text">
+          <div class="text-left text-container">
+            <h3>Contacts :</h3>
+            <div class="mini-text-left">
+              <p>Tel : 0707070707</p>
+              <p>Email : email@gmail.com</p>
+            </div>          
+          </div>
+          <div class="mini-trait"></div>
+          <div class="text-right text-container">
+            <a href="faq.html">Commander</a>
+            <a href="faq.html">Foire aux questions</a>
+            <a href="menus.html">Menus</a>
+            <a href="index.html#sec2">Qui sommes nous ?</a>
+            <a href="#">Mentions légales</a>
+          </div>
+        </div>
+          <div class="media">
+            <div class="mini-trait"></div>
+            <ul>
+              <li><i class="fa-brands fa-snapchat"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-telegram"></i></li>
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+            </ul>
+            <div class="mini-trait"></div>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2022 La Samousserie, inc</p>
+          </div>
+      </footer>
 
 </body>
 </html>

@@ -5,36 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0cfccd0bcd.js" crossorigin="anonymous"></script>
     <title>La Samousserie service de livraison de samoussas à domicile</title>
   </head>
   <body>
     <!-- ******************** Nav Bar ********************** -->
 
-    <header class="nav-bar">
-      <nav>
-        <h1><a href="index.html#sec1">La Samousserie</a></h1>
-        <div class="onglets">
-          <a href="index.html#sec1">Accueil</a>
+    <header id="navbar" class="nav">
+        <h1><a href="index.html">La Samousserie</a></h1>
+        <div class="main-logo">
+          <a href="index.html"><img src="images/Singe-scooter/singe-modif31.png" alt="Logo singe qui conduit un scooter"></a>
+        </div>
+        <div class="onglets" >
+          <a href="index.html">Accueil</a>
           <a href="index.html#sec2">Nos services</a>
           <a href="menus.html">Menu</a>
-          <a href="map.html">Contacts</a>
-          <a href="#">Commander</a>
+          <a href="#footer1">Contacts</a>
+          <a href="faq.html">Commander</a>
         </div>
-      </nav>
     </header>
 
     <!-- ********************* Main ******************* -->
 
     <main id="main" class="main">
       <section class="sec1" id="sec1">
-        <div class="main-logo">
-          <!-- <img src="images/Singe-scooter/singe14.png" alt="Logo singe"> -->
-        </div>
         <div class="welcome-text">
           <h1>La Samousserie</h1>
           <div class="trait"></div>
           <p>Livraison de samoussas frais</p>
-          <button>
+          <button onclick="window.location.href = 'faq.html';">
             <span>Commander</span>
             <div class="liquid"></div>
           </button>
@@ -87,23 +86,9 @@
         </div>    
       </section>
 
+<!-- *************** Footer ******************** -->
 
-
-
-
-
-
-      <!-- ********* Section Google Map *********/ -->
-<!-- 
-      <section class="sec3">
-        <div class="iframe-container">
-            <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d340962.5294526275!2d-1.665399!3d48.114677!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1650468157372!5m2!1sfr!2sfr" width="1920" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </section>
-    </main> -->
-
-    <!-- *************************** Footer ****************** -->
-    <footer class="footer">
+    <footer class="footer" id="footer1">
       <div class="text">
         <div class="text-left text-container">
           <h3>Contacts :</h3>
@@ -114,19 +99,21 @@
         </div>
         <div class="mini-trait"></div>
         <div class="text-right text-container">
-          <a href="map.html">Commander</a>
-          <a href="#">Foire aux questions</a>
+          <a href="faq.html">Commander</a>
+          <a href="faq.html">Foire aux questions</a>
           <a href="menus.html">Menus</a>
-          <a href="#">Qui sommes nous ?</a>
+          <a href="index.html#sec2">Qui sommes nous ?</a>
+          <a href="#">Mentions légales</a>
         </div>
       </div>
         <div class="media">
           <div class="mini-trait"></div>
-          <img src="images/resaux-sociaux/compressor (1)/insta.png" alt="logo instagram">
-          <img src="images/resaux-sociaux/compressor (1)/facebook.png" alt="logo facebook">
-          <img src="images/resaux-sociaux/compressor (1)/snap.png" alt="logo snapshat">
-          <img src="images/resaux-sociaux/compressor (1)/twitter.png" alt="logo twitter">
-          <img src="images/resaux-sociaux/compressor (1)/youtube.png" alt="logo youtube">
+          <ul>
+            <li><i class="fa-brands fa-snapchat"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-telegram"></i></li>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+          </ul>
           <div class="mini-trait"></div>
         </div>
         <div class="copyright">
