@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/0cfccd0bcd.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>La Samousserie service de livraison de samoussas à domicile</title>
   </head>
   <body>
     <!-- ******************** Nav Bar ********************** -->
 
     <header id="navbar" class="nav">
-        <h1><a href="index.html">La Samousserie</a></h1>
+        <h3><a href="index.html">La Samousserie</a></h3>
         <div class="main-logo">
           <a href="index.html"><img src="images/Singe-scooter/singe-modif31.png" alt="Logo singe qui conduit un scooter"></a>
         </div>
         <div class="onglets" >
-          <a href="index.html">Accueil</a>
-          <a href="index.html#sec2">Nos services</a>
-          <a href="menus.html">Menu</a>
-          <a href="#footer1">Contacts</a>
-          <a href="faq.html">Commander</a>
+          <div class="sous-onglets">
+            <a href="index.html">Accueil</a>
+            <a href="index.html#sec2">Nos services</a>
+            <a href="menus.html">Menu</a>
+            <a href="#footer1">Contacts</a>
+          </div>
+          <div class="btn">
+            <a href="commande.html">Commander</a>
+          </div>
         </div>
     </header>
 
@@ -32,13 +43,12 @@
         <div class="welcome-text">
           <h1>La Samousserie</h1>
           <div class="trait"></div>
-          <p>Livraison de samoussas frais</p>
-          <button onclick="window.location.href = 'faq.html';">
+          <h2>Livraison de samoussas frais et fait maison sur Rennes Métropole</h2>
+          <button onclick="window.location.href = 'commande.html';">
             <span>Commander</span>
             <div class="liquid"></div>
           </button>
         </div>
-        
       </section>
 
       <!-- ********************** Section 2 ***************** -->
@@ -99,8 +109,8 @@
         </div>
         <div class="mini-trait"></div>
         <div class="text-right text-container">
-          <a href="faq.html">Commander</a>
-          <a href="faq.html">Foire aux questions</a>
+          <a href="commande.html">Commander</a>
+          <a href="commande.html">Foire aux questions</a>
           <a href="menus.html">Menus</a>
           <a href="index.html#sec2">Qui sommes nous ?</a>
           <a href="#">Mentions légales</a>
@@ -111,11 +121,12 @@
           <ul>
             <li><i class="fa-brands fa-snapchat"></i></li>
             <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-telegram"></i></li>
+            <li><a href="http://google.fr"><img src="images/resaux-sociaux/telegramnb2.png" alt="logo telegram"></a></li>
             <li><i class="fa-brands fa-facebook-f"></i></li>
           </ul>
           <div class="mini-trait"></div>
         </div>
+        <hr>
         <div class="copyright">
           <p>Copyright © 2022 La Samousserie, inc</p>
         </div>

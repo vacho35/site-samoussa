@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0cfccd0bcd.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style.css" />
     <title>Menus de La Samousserie</title>
 </head>
@@ -13,16 +20,20 @@
     <!-- ******** Nav-Bar ******** -->
 
     <header id="navbar" class="nav">
-        <h1><a href="index.html">La Samousserie</a></h1>
+        <h3><a href="index.html">La Samousserie</a></h3>
         <div class="main-logo">
           <a href="index.html"><img src="images/Singe-scooter/singe-modif31.png" alt="Logo singe qui conduit un scooter"></a>
         </div>
         <div class="onglets" >
-          <a href="index.html">Accueil</a>
-          <a href="index.html#sec2">Nos services</a>
-          <a href="menus.html">Menu</a>
-          <a href="#footer2">Contacts</a>
-          <a href="faq.html">Commander</a>
+          <div class="sous-onglets">
+            <a href="index.html">Accueil</a>
+            <a href="index.html#sec2">Nos services</a>
+            <a href="menus.html">Menu</a>
+            <a href="#footer2">Contacts</a>
+          </div>
+          <div class="btn">
+            <a href="commande.html">Commander</a>
+          </div>
         </div>
     </header>
 
@@ -32,17 +43,16 @@
 
 
     <section class="sec3">
-        <h1>Nos Samoussas</h1>
+        <h2>Nos Samoussas</h2>
         <div class="trait"></div>
         <div class="image-resp">
             <img src="images/samoussa/samoussa-style2-compress.png" alt="Deux beaux samoussas superposés avec quelques légumes en fond">
         </div>
-    </section>
-    <div class="menus">
+        <div class="menus">
         <div class=card id="samoussas-boeuf">
             <div class="menus-text text-b">
-                <h2>Samoussas Boeuf</h2>
-                <h3>12 Pièces</h3>
+                <h3>Samoussas Boeuf</h3>
+                <h4>12 Pièces</h4>
                 <span>8 euros</span>
             </div>
             <div class="photo photo-b">
@@ -51,8 +61,8 @@
         </div>
         <div class=card id="samoussas-volaille">
             <div class="menus-text text-v">
-                <h2>Samoussas Volaille</h2>
-                <h3>12 Pièces</h3>
+                <h3>Samoussas Volaille</h3>
+                <h4>12 Pièces</h4>
                 <span>8 euros</span>
             </div>
             <div class="photo photo-v">
@@ -61,8 +71,8 @@
         </div>
         <div class=card id="samoussas-legume">
             <div class="menus-text text-l">
-                <h2>Samoussas Légumes</h2>
-                <h3>12 Pièces</h3>
+                <h3>Samoussas Légumes</h3>
+                <h4>12 Pièces</h4>
                 <span>8 euros</span>
             </div>
             <div class="photo photo-l">
@@ -71,8 +81,8 @@
         </div>
         <div class=card id="samoussas-poisson">
             <div class="menus-text text-p">
-                <h2>Samoussas Poisson</h2>
-                <h3>5 Pièces</h3>
+                <h3>Samoussas Poisson</h3>
+                <h4>5 Pièces</h4>
                 <span>4 euros</span>
             </div>
             <div class="photo photo-p">
@@ -81,8 +91,8 @@
         </div>
         <div class=card id="samoussas-chevre">
             <div class="menus-text text-c">
-                <h2>Samoussas Chèvre Miel</h2>
-                <h3>5 Pièces</h3>
+                <h3>Samoussas Chèvre Miel</h3>
+                <h4>5 Pièces</h4>
                 <span>4 euros</span>
             </div>
             <div class="photo photo-c">
@@ -90,20 +100,20 @@
             </div>
         </div>
     </div>
+</section>
 
     <!-- ********* Section 4 (Sucré) ********** -->
 
     <section class="sec4">
         <div class="trait" id="bigtrait"></div>
-        <h1>Nos Desserts</h1>
+        <h2>Nos Desserts</h2>
         <div class="trait"></div>
         </div>
-    </section>
     <div class="menus">
         <div class=card id="beignets nature">
             <div class="menus-text text-bn">
-                <h2>Beignets Nature</h2>
-                <h3>5 Pièces</h3>
+                <h3>Beignets Nature</h3>
+                <h4>5 Pièces</h4>
                 <span>2 euros</span>
             </div>
             <div class="photo photo-l">
@@ -112,8 +122,8 @@
         </div>
         <div class=card id="beignets banane">
             <div class="menus-text text-bb">
-                <h2>Beignets Banane</h2>
-                <h3>5 Pièces</h3>
+                <h3>Beignets Banane</h3>
+                <h4>5 Pièces</h4>
                 <span>3 euros</span>
             </div>
             <div class="photo photo-p">
@@ -122,8 +132,8 @@
         </div>
         <div class=card id="sauce-chocolat">
             <div class="menus-text text-bn">
-                <h2>Sauce Chocolat</h2>
-                <h3></h3>
+                <h3>Sauce Chocolat</h3>
+                <h4></h4>
                 <span>0.25 euro</span>
             </div>
             <div class="photo photo-l">
@@ -132,8 +142,8 @@
         </div>
         <div class=card id="sauce-coco">
             <div class="menus-text text-bb">
-                <h2>Sauce Coco Vanille Canelle</h2>
-                <h3></h3>
+                <h3>Sauce Coco Vanille Canelle</h3>
+                <h4></h4>
                 <span>0.5 euro</span>
             </div>
             <div class="photo photo-p">
@@ -141,6 +151,7 @@
             </div>
         </div>
     </div>
+</section>
 
     <!-- ********** Footer ********** -->
 
@@ -155,8 +166,8 @@
           </div>
           <div class="mini-trait"></div>
           <div class="text-right text-container">
-            <a href="faq.html">Commander</a>
-            <a href="faq.html">Foire aux questions</a>
+            <a href="commande.html">Commander</a>
+            <a href="commande.html">Foire aux questions</a>
             <a href="menus.html">Menus</a>
             <a href="index.html#sec2">Qui sommes nous ?</a>
             <a href="#">Mentions légales</a>
@@ -167,11 +178,12 @@
             <ul>
               <li><i class="fa-brands fa-snapchat"></i></li>
               <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-telegram"></i></li>
+              <li><a href="http://google.fr"><img src="images/resaux-sociaux/telegramnb2.png" alt="logo telegram"></a></li>
               <li><i class="fa-brands fa-facebook-f"></i></li>
             </ul>
             <div class="mini-trait"></div>
           </div>
+          <hr>
           <div class="copyright">
             <p>Copyright © 2022 La Samousserie, inc</p>
           </div>
