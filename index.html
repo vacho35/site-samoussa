@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>La Samousserie service de livraison de samoussas à domicile</title>
+  
+    <!-- ********** Library ********** -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/0cfccd0bcd.js" crossorigin="anonymous"></script>
+
+    <!-- ********* CSS ********* -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ********* Flaticon *********** -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,7 +22,6 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>La Samousserie service de livraison de samoussas à domicile</title>
   </head>
   <body>
     <!-- ******************** Nav Bar ********************** -->
@@ -55,7 +63,7 @@
 
       <section class="sec2" id="sec2">
         <div class="container">
-          <div class="card" id="services">
+          <div class="card" id="services" data-aos="fade-right" data-aos-delay="1400"  data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">
             <div class="text">
               <h2>Nos services</h2>
               <div class="trait"></div>
@@ -65,7 +73,7 @@
               </p>
             </div>
           </div>
-          <div class="card" id="savoir">
+          <div class="card" id="savoir" data-aos="fade-down" data-aos-delay="300"  data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">
             <div class="text">
               <h2>Notre savoir-faire</h2>
               <div class="trait"></div>
@@ -76,7 +84,7 @@
               </p>
             </div>
           </div>
-          <div class="card" id="ingredients">
+          <div class="card" id="ingredients" data-aos="fade-left" data-aos-delay="2400"  data-aos-duration="1200" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="center-bottom">
             <div class="text">
               <h2>Nos ingrédients</h2>
               <div class="trait"></div>
@@ -100,15 +108,15 @@
 
     <footer class="footer" id="footer1">
       <div class="text">
-        <div class="text-left text-container">
+        <div class="text-left text-container" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="1000" data-aos-easing="ease-out-back">
           <h3>Contacts :</h3>
           <div class="mini-text-left">
-            <p>Tel : 0707070707</p>
-            <p>Email : email@gmail.com</p>
+            <p>Tel : 07 74 04 64 86</p>
+            <p>Email : lasamousserie@gmail.com</p>
           </div>          
         </div>
         <div class="mini-trait"></div>
-        <div class="text-right text-container">
+        <div class="text-right text-container" data-aos="fade-left" data-aos-delay="800" data-aos-easing="ease-out-back" data-aos-duration="1500">
           <a href="commande.html">Commander</a>
           <a href="commande.html">Foire aux questions</a>
           <a href="menus.html">Menus</a>
@@ -117,13 +125,15 @@
         </div>
       </div>
         <div class="media">
-          <div class="mini-trait"></div>
+          <div class="mini-trait" ></div>
+          <div class="media-logos">
           <ul>
-            <li><i class="fa-brands fa-snapchat"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><a href="http://google.fr"><img src="images/resaux-sociaux/telegramnb2.png" alt="logo telegram"></a></li>
-            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><a href="https://www.instagram.com/speedmakieat/"><img src="images/resaux-sociaux/snap-blanc.png" alt="logo snapchat"></a></li>
+            <li><a href="https://www.instagram.com/speedmakieat/"><img src="images/resaux-sociaux/pngegg.png" alt="logo instagram"></a></li>
+            <li><a href="https://t.me/Lauret05"><img src="images/resaux-sociaux/telegram10.png" alt="logo telegram"></a></li>
+            <li><a href="https://www.tiktok.com/@speedmakieat35"><img src="images/resaux-sociaux/White-TikTok-Logo.png" alt="logo tiktok"></a></li>
           </ul>
+        </div>
           <div class="mini-trait"></div>
         </div>
         <hr>
@@ -131,5 +141,8 @@
           <p>Copyright © 2022 La Samousserie, inc</p>
         </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

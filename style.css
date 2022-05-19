@@ -95,7 +95,26 @@ header .onglets a {
 }
 header .sous-onglets a {
   margin-right: 10px;
+  position: relative;
+  display: inline-block;
 }
+
+header .sous-onglets a::after {
+  content: "";
+  display: block;
+ position: absolute;
+ bottom: -2px;
+ width: 100%;
+ height: 1px;
+ transform: scale(0);
+ transform-origin: left;
+ background: #e2a857;
+ transition: transform 0.3s ease-out;
+}
+header .sous-onglets a:hover::after{
+  transform: scaleX(1);
+}
+
 header .onglets .btn {
   background: rgb(255, 176, 65);
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb037+0,f69204+100 */
@@ -222,7 +241,7 @@ header .onglets .btn:hover a {
   margin: 135px 0px 0px 12%;
 }
 .welcome-text .trait {
-  margin: 30px auto;
+  margin: 50px;
 }
 
 .sec1 h1 {
@@ -287,7 +306,7 @@ header .onglets .btn:hover a {
 @media (max-width: 650px) {
   .sec1 button {
     position: relative;
-    padding: 8px 30px;
+    padding: 13px 30px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb037+0,f69204+100 */
     background: rgb(255, 176, 55); /* Old browsers */
     background: -moz-radial-gradient(
@@ -455,6 +474,7 @@ header .onglets .btn:hover a {
   background-image: url(images/fond-resto-indien/fond-resto-classe-flou-compress.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -467,7 +487,7 @@ header .onglets .btn:hover a {
 }
 
 .sec2 .container p {
-  font-size: 0.6em;
+  font-size: 0.8em;
   padding: 20px;
   line-height: 20px;
 }
@@ -528,7 +548,7 @@ header .onglets .btn:hover a {
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.85;
+  opacity: 1;
   background-image: url(images/fond-resto-indien/farinne-main-resized-compress.jpg);
   background-size: cover;
   background-position: center center;
@@ -697,7 +717,7 @@ header .onglets .btn:hover a {
   margin-right: auto;
   margin-bottom: 2.5rem;
   color: #111;
-  max-width: 90ch;
+  max-width: 60ch;
 }
 
 .sec3 .image-resp img {
@@ -729,19 +749,19 @@ header .onglets .btn:hover a {
 }
 .card .menus-text h3 {
   padding: 0 15px;
-  font-size: calc(1.1vmax + 1px);
+  font-size: calc(2.7vmin);
   margin-bottom: 4%;
 }
 .card .menus-text h4 {
   color: #f5f2ed;
-  font-weight: 400;
-  font-size: calc(1.1vmax + 1px);
+  font-weight: 300;
+  font-size: calc(2.4vmin + 1px);
   margin-bottom: 4%;
   display: inline;
 }
 .card .menus-text span {
-  font-size: calc(1.1vmax + 1px);
-  font-weight: 400;
+  font-size: calc(2.4vmin + 21x);
+  font-weight: 300;
   color: rgb(255, 166, 42);
 }
 .menus-text {
@@ -761,6 +781,7 @@ header .onglets .btn:hover a {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(5, 5, 5, 0.08);
   border-radius: 10px 0 0 10px;
+  transition: 1.6s ease-in-out;
 }
 
 .menus .photo {
@@ -775,33 +796,46 @@ header .onglets .btn:hover a {
 .menus .card {
   display: flex;
   border-radius: 16px;
+  transition: 0.6s ease-in-out;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.menus .card:hover {
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01);
+}
+.menus .card:hover .menus-text {
+  background: rgba(5, 5, 5, 0.79);
 }
 
-@media (min-width: 1150px) {
-  .menus {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 850px) {
-  .menus {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (min-width: 851px) {
   .sec3 h2 {
     padding-top: 120px;
   }
 }
 
-@media (min-width: 400px) and (max-width: 850px) {
+@media (min-width: 1150px) {
+  .menus {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sec3 h2 {
+    padding-top: 120px;
+  }
+
   .card .menus-text h3 {
-    font-size: calc(2vmin + 8px);
+    font-size: calc(1.7vmin + 2px);
   }
+
   .card .menus-text h4 {
-    font-size: calc(2vmin + 8px);
+    font-size: 1em;
   }
+
   .card .menus-text span {
-    font-size: calc(2vmin + 6px);
+    font-size: 1em;
   }
 }
 
@@ -1109,9 +1143,12 @@ footer .mini-trait {
   background-color: rgb(221, 135, 15);
   width: 10%;
 }
+
 footer .media img {
-  height: 30px;
+  height: 17px;
+  vertical-align: middle;
 }
+
 hr {
   width: 90%;
   border-top: 1px;
