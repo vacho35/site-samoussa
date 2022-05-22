@@ -102,16 +102,16 @@ header .sous-onglets a {
 header .sous-onglets a::after {
   content: "";
   display: block;
- position: absolute;
- bottom: -2px;
- width: 100%;
- height: 1px;
- transform: scale(0);
- transform-origin: left;
- background: #e2a857;
- transition: transform 0.3s ease-out;
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  transform: scale(0);
+  transform-origin: left;
+  background: #e2a857;
+  transition: transform 0.3s ease-out;
 }
-header .sous-onglets a:hover::after{
+header .sous-onglets a:hover::after {
   transform: scaleX(1);
 }
 
@@ -122,19 +122,19 @@ header .onglets .btn {
   background: -moz-radial-gradient(
     center,
     ellipse cover,
-    rgb(255, 176, 55) 0%,
-    rgb(246, 146, 4) 100%
+    rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
   ); /* FF3.6-15 */
   background: -webkit-radial-gradient(
     center,
     ellipse cover,
-    rgb(255, 176, 55) 0%,
-    rgb(246, 146, 4) 100%
+    rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(
     ellipse at center,
-    rgb(255, 176, 55) 0%,
-    rgb(246, 146, 4) 100%
+    rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb037', endColorstr='#f69204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
@@ -235,58 +235,139 @@ header .onglets .btn:hover a {
   width: 100%;
   position: relative;
 }
+
+.sec1::before {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 90%;
+  background-color: #bc3b18;
+  left: calc(50vmin + 10%);
+  top: 0;
+  transform: translate(50% -50%);
+}
+
+.sec1::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 225px;
+  background-color: #bc3b18;
+  left: 0px;
+  top: 173px;
+}
+
 .welcome-text {
   flex-direction: column;
   display: inline-block;
   margin: 135px 0px 0px 12%;
+  background: linear-gradient(
+    107.12deg,
+    rgba(0, 0, 0, 0.6) -29.95%,
+    rgba(0, 0, 0, 0.1) 81.52%
+  );
+  box-shadow: 35px 35px 20px rgba(0, 0, 0, 0.5),
+    35px 35px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 4px 44px 44px 44px;
 }
-.welcome-text .trait {
-  margin: 50px;
+
+.welcome-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background: linear-gradient(116deg, rgba(255, 255, 255, 0.6) -82%, rgba(255, 255, 255, -0.9) 107.52%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 .sec1 h1 {
   color: rgb(255 183 82 / 82%);
-  font-size: calc(8vmin + 0.6em);
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-shadow: 3px 2px 3px #9c610ef5;
+  font-size: calc(4vmin + 1.2em);
+  font-weight: 700;
+  line-height: 118px;
+  letter-spacing: 0.075em;
+  padding: 0;
 }
 
 .welcome-text h2 {
-  margin: 0 auto;
-  font-size: calc(1.8vmin + 0.4em);
+  font-size: calc(0.8vmin + 0.8em);
   font-family: poppins, sans-serif;
-  text-shadow: 2px 2px 6px #a89171;
   text-align: start;
-  padding-right: 80px;
+  padding: 0;
 }
 @media (max-width: 850px) {
   .sec1 {
     height: 90vh;
   }
+  .sec1::after {
+    top: 108px;
+  }
   .welcome-text {
-    margin: 70px 0px 0px 12%;
+    margin: 70px 40px 0px 12%;
+  }
+  .sec1::before {
+    height: 82%;
   }
 }
 
-@media (max-width: 470px) {
-  .welcome-text h2 {
-    padding-right: 20px;
+@media (max-width: 541px) {
+  .welcome-text {
+    padding: 10px 15px 30px 30px;
+  }
+  .sec1::before {    
+    width: 100px;
+    height: 82%;
+    left: calc(40vmin + 10%);
+  }
+  .sec1::after {
+      top: 122px;
+      height: 196px;
+  }
+  .sec1 h1 {
+    font-size: calc(3vmin + 1.2em);
+  }
+  .sec1 h2 {
+    font-size: calc(0.6vmin + 0.6em);
   }
 }
+
+@media (max-width: 360px) {
+  .welcome-text {
+      margin: 68px 0px 0px 12%;
+  }
+  .sec1::before {    
+    width: 90px;
+  }
+  .sec1 h1 {
+    font-size: calc(3vmin + 1.2em);
+  }
+  .sec1 h2 {
+    font-size: calc(0.6vmin + 0.6em);
+  }
+}
+
 
 /* ********* Bouton ******** */
 
 .sec1 button {
   position: relative;
-  padding: 14px 40px;
+  padding: 12px 35px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   border-radius: 15px;
   border: none;
-  margin-top: 60px;
+  margin-top: 35px;
 }
+
 .sec1 button span {
   position: relative;
   color: #2c2534;
@@ -306,25 +387,25 @@ header .onglets .btn:hover a {
 @media (max-width: 650px) {
   .sec1 button {
     position: relative;
-    padding: 13px 30px;
+    padding: 10px 20px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb037+0,f69204+100 */
-    background: rgb(255, 176, 55); /* Old browsers */
+    background: rgb(255, 176, 65); /* Old browsers */
     background: -moz-radial-gradient(
       center,
       ellipse cover,
-      rgb(255, 176, 55) 0%,
-      rgb(246, 146, 4) 100%
+      rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
     ); /* FF3.6-15 */
     background: -webkit-radial-gradient(
       center,
       ellipse cover,
-      rgb(255, 176, 55) 0%,
-      rgb(246, 146, 4) 100%
+      rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
     ); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(
       ellipse at center,
-      rgb(255, 176, 55) 0%,
-      rgb(246, 146, 4) 100%
+      rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb037', endColorstr='#f69204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
@@ -335,9 +416,9 @@ header .onglets .btn:hover a {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgb(255, 176, 65);
+    background: rgb(255, 176, 55);
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#da9a41+0,bd4c0b+100 */
-    background: rgb(218, 154, 65); /* Old browsers */
+    background: rgb(218, 154, 55); /* Old browsers */
     background: -moz-radial-gradient(
       center,
       ellipse cover,
@@ -389,19 +470,19 @@ header .onglets .btn:hover a {
   background: -moz-radial-gradient(
     center,
     ellipse cover,
-    rgb(255, 176, 55) 0%,
-    rgb(246, 146, 4) 100%
+    rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
   ); /* FF3.6-15 */
   background: -webkit-radial-gradient(
     center,
     ellipse cover,
-    rgb(255, 176, 55) 0%,
-    rgb(246, 146, 4) 100%
+    rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(
     ellipse at center,
-    rgb(255, 176, 55) 0%,
-    rgb(246, 146, 4) 100%
+    rgb(218, 154, 65) 0%,
+      rgb(189, 76, 11) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb037', endColorstr='#f69204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
@@ -437,19 +518,19 @@ header .onglets .btn:hover a {
   background: -moz-radial-gradient(
     center,
     ellipse cover,
-    rgb(218, 154, 65) 0%,
-    rgb(189, 76, 11) 100%
+    rgb(255, 176, 55) 0%,
+    rgb(246, 146, 4) 100%
   ); /* FF3.6-15 */
   background: -webkit-radial-gradient(
     center,
     ellipse cover,
-    rgb(218, 154, 65) 0%,
-    rgb(189, 76, 11) 100%
+    rgb(255, 176, 55) 0%,
+    rgb(246, 146, 4) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(
     ellipse at center,
-    rgb(218, 154, 65) 0%,
-    rgb(189, 76, 11) 100%
+    rgb(255, 176, 55) 0%,
+    rgb(246, 146, 4) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da9a41', endColorstr='#bd4c0b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   cursor: pointer;
@@ -478,7 +559,9 @@ header .onglets .btn:hover a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 .sec2 .container h2 {
   font-size: 1.6em;
   line-height: 30px;
@@ -879,39 +962,37 @@ header .onglets .btn:hover a {
   padding-top: 100px;
 }
 .sec5 h2 {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .sec5 h3 {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .sec5 .faq-content {
   display: flex;
   justify-content: space-around;
-  line-height: 30px;
+  line-height: 20px;
 }
 .sec5 .card {
   margin: 20px;
 }
 .sec5 li {
   display: inline-block;
+  font-size: 0.8em;
 }
 .sec5 i {
   margin-left: 10px;
 }
 .sec5 img {
-  height: 28px;
+  height: 20px;
   margin-left: 10px;
   vertical-align: middle;
 }
 .sec5 .card {
-  line-height: 40px;
-}
-.sec5 #card3 {
-  line-height: 45px;
+  line-height: 30px;
 }
 .sec5 .trait {
-  margin: 31px auto auto;
+  margin: 35px auto;
 }
 .sec6 {
   height: 100vh;

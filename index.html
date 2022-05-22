@@ -47,15 +47,14 @@
     <!-- ********************* Main ******************* -->
 
     <main id="main" class="main">
-      <section class="sec1" id="sec1">
-        <div class="welcome-text">
-          <h1>La Samousserie</h1>
-          <div class="trait"></div>
-          <h2>Livraison de samoussas frais et fait maison sur Rennes Métropole</h2>
-          <button onclick="window.location.href = 'commande.html';">
-            <span>Commander</span>
-            <div class="liquid"></div>
-          </button>
+      <section class="sec1" id="sec1" transform: translateZ(200px)>
+        <div class="welcome-text"  data-tilt easing:"cubic-bezier(.17,.67,.83,.67)", transition: true>
+            <h1 transform: translateZ(200px)>La Samousserie</h1>
+          <h2 transform: translateZ(200px)>Livraison de samoussas frais et fait maison <br>sur Rennes Métropole</h2>
+          <button onclick="window.location.href = 'commande.html';" transform: translateZ(200px)>
+            <span >Commander</span>
+            <div class="liquid" transform: translateZ(200px)></div>
+          </button>         
         </div>
       </section>
 
@@ -144,5 +143,6 @@
     <script>
       AOS.init();
     </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
   </body>
 </html>
