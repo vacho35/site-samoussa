@@ -5,12 +5,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: poppins, sans-serif;
   background-color: #1c1b1e;
   color: #c8c5c5;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -123,18 +129,18 @@ header .onglets .btn {
     center,
     ellipse cover,
     rgb(218, 154, 65) 0%,
-      rgb(189, 76, 11) 100%
+    rgb(189, 76, 11) 100%
   ); /* FF3.6-15 */
   background: -webkit-radial-gradient(
     center,
     ellipse cover,
     rgb(218, 154, 65) 0%,
-      rgb(189, 76, 11) 100%
+    rgb(189, 76, 11) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(
     ellipse at center,
     rgb(218, 154, 65) 0%,
-      rgb(189, 76, 11) 100%
+    rgb(189, 76, 11) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb037', endColorstr='#f69204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
@@ -282,7 +288,12 @@ header .onglets .btn:hover a {
   bottom: 0;
   border-radius: 30px;
   border: 1px solid transparent;
-  background: linear-gradient(116deg, rgba(255, 255, 255, 0.6) -82%, rgba(255, 255, 255, -0.9) 107.52%) border-box;
+  background: linear-gradient(
+      116deg,
+      rgba(255, 255, 255, 0.6) -82%,
+      rgba(255, 255, 255, -0.9) 107.52%
+    )
+    border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
@@ -303,9 +314,9 @@ header .onglets .btn:hover a {
   text-align: start;
   padding: 0;
 }
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .sec1 {
-    height: 90vh;
+    height: 80vh;
   }
   .sec1::after {
     top: 108px;
@@ -319,17 +330,21 @@ header .onglets .btn:hover a {
 }
 
 @media (max-width: 541px) {
+  .sec1 {
+    height: 70vh;
+  }
+
   .welcome-text {
     padding: 10px 15px 30px 30px;
   }
-  .sec1::before {    
+  .sec1::before {
     width: 100px;
     height: 82%;
     left: calc(40vmin + 10%);
   }
   .sec1::after {
-      top: 122px;
-      height: 196px;
+    top: 122px;
+    height: 196px;
   }
   .sec1 h1 {
     font-size: calc(3vmin + 1.2em);
@@ -341,9 +356,9 @@ header .onglets .btn:hover a {
 
 @media (max-width: 360px) {
   .welcome-text {
-      margin: 68px 0px 0px 12%;
+    margin: 68px 0px 0px 12%;
   }
-  .sec1::before {    
+  .sec1::before {
     width: 90px;
   }
   .sec1 h1 {
@@ -353,7 +368,6 @@ header .onglets .btn:hover a {
     font-size: calc(0.6vmin + 0.6em);
   }
 }
-
 
 /* ********* Bouton ******** */
 
@@ -471,18 +485,18 @@ header .onglets .btn:hover a {
     center,
     ellipse cover,
     rgb(218, 154, 65) 0%,
-      rgb(189, 76, 11) 100%
+    rgb(189, 76, 11) 100%
   ); /* FF3.6-15 */
   background: -webkit-radial-gradient(
     center,
     ellipse cover,
     rgb(218, 154, 65) 0%,
-      rgb(189, 76, 11) 100%
+    rgb(189, 76, 11) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(
     ellipse at center,
     rgb(218, 154, 65) 0%,
-      rgb(189, 76, 11) 100%
+    rgb(189, 76, 11) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb037', endColorstr='#f69204',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
@@ -752,9 +766,9 @@ header .onglets .btn:hover a {
     rgba(21, 24, 24, 0.67) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00181815', endColorstr='#ab151818',GradientType=0 ); /* IE6-9 */
-
   border-radius: 20px;
 }
+
 @media only screen and (max-width: 840px) {
   .sec2 {
     align-items: flex-start;
@@ -832,20 +846,20 @@ header .onglets .btn:hover a {
 }
 .card .menus-text h3 {
   padding: 0 15px;
-  font-size: calc(2.7vmin);
-  margin-bottom: 4%;
+  font-size: calc(2.4vmin);
+  margin-bottom: 17px;
 }
 .card .menus-text h4 {
   color: #f5f2ed;
   font-weight: 300;
-  font-size: calc(2.4vmin + 1px);
+  font-size: calc(1.7vmin + 1px);
   margin-bottom: 4%;
-  display: inline;
 }
-.card .menus-text span {
-  font-size: calc(2.4vmin + 21x);
+.card .menus-text p {
   font-weight: 300;
   color: rgb(255, 166, 42);
+  float: right;
+  margin-left: 5px;
 }
 .menus-text {
   border-top: 1px solid #fbfbfb;
@@ -864,7 +878,7 @@ header .onglets .btn:hover a {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(5, 5, 5, 0.08);
   border-radius: 10px 0 0 10px;
-  transition: 1.6s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .menus .photo {
@@ -910,15 +924,11 @@ header .onglets .btn:hover a {
   }
 
   .card .menus-text h3 {
-    font-size: calc(1.7vmin + 2px);
+    font-size: calc(2.3vmin + 1px);
   }
 
   .card .menus-text h4 {
-    font-size: 1em;
-  }
-
-  .card .menus-text span {
-    font-size: 1em;
+    font-size: 0.65em;
   }
 }
 
@@ -1147,36 +1157,56 @@ footer {
 footer .text {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   margin: 20px;
+  justify-content: space-evenly;
+  text-align: start;
 }
+
 footer .text .text-left h3 {
-  display: block;
   width: fit-content;
   font-weight: 400;
   border-bottom: solid rgb(221, 135, 15);
   margin-bottom: 20px;
   font-size: 1em;
 }
+
 footer .text p,
 a {
-  font-size: calc(0.8vmin + 8px);
-  padding: 5px 0;
+  font-size: calc(0.8vmin + 6px);
+  padding: 3.5px 0;
 }
 
-footer .text > .mini-trait {
-  position: absolute;
-  margin-right: auto;
-  margin-left: auto;
-  height: 1px;
-  background-color: rgb(221, 135, 15);
-  width: 90px;
-  transform: rotate(90deg);
-}
 footer .text-left,
 .text-right {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+footer .text-left span {
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+footer .text-right {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .text-right a {
+  display: block;
+  font-weight: 500;
+}
+
+footer .text-right ul a {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+footer .mini-text-right {
+  margin: 0 30px;
 }
 
 footer .media ul {
@@ -1237,22 +1267,26 @@ hr {
   opacity: 20%;
   margin-top: 30px;
 }
-@media (max-width: 700px) {
+
+@media (max-width: 850px) {
   footer .text {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   footer .text .text-left h3 {
-    margin: 0 auto;
+    margin: 20px auto;
   }
-  .mini-text-left {
-    margin: 20px 0;
-  }
-  footer .text > .mini-trait {
-    position: relative;
-    width: 200px;
-    transform: rotate(180deg);
-    margin: 20px 0;
-  }
+}
+
+@media (max-width: 700px) {
+  
+  footer .text-right{
+    display: flex;
+    flex-direction: column;
+    margin: 7px auto;      
+}
+footer .mini-text-right{
+  margin: 6px auto;      
+}
 }
