@@ -352,16 +352,18 @@ header .onglets .btn:hover a {
 
   .welcome-text {
     padding: 10px 15px 30px 30px;
+    margin: 50px 0px 0px 12%;
   }
   .sec1::before {
     width: 100px;
-    height: 82%;
+    height: 85%;
     left: calc(40vmin + 10%);
   }
   .sec1::after {
-    top: 122px;
-    height: 196px;
-  }
+    top: 105px;
+    height: 187px;
+    width: 9px;
+}
   .sec1 h1 {
     font-size: calc(3vmin + 1.2em);
   }
@@ -406,7 +408,6 @@ header .onglets .btn:hover a {
   font-weight: 800;
   font-size: 1.2em;
   letter-spacing: 2;
-  left: 5px;
 }
 .sec1 button:hover span {
   cursor: pointer;
@@ -592,6 +593,7 @@ header .onglets .btn:hover a {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .sec2 .container h2 {
@@ -606,11 +608,7 @@ header .onglets .btn:hover a {
   padding: 20px;
   line-height: 20px;
 }
-.sec2 .container .card .text .trait {
-  background-color: #fbfbfb;
-  margin: 5px auto;
-  width: 30%;
-}
+
 .sec2 .container {
   width: calc(80vmin + 650px);
   height: 65vh;
@@ -618,6 +616,7 @@ header .onglets .btn:hover a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .sec2 .container .card {
   height: 100%;
@@ -631,6 +630,7 @@ header .onglets .btn:hover a {
   border-top: 1px solid rgb(125, 125, 125);
   border-left: 1px solid rgb(125, 125, 125);
   margin: 0 auto;
+  overflow: hidden;
 }
 .sec2 #services {
   position: relative;
@@ -696,6 +696,11 @@ header .onglets .btn:hover a {
   line-height: 13px;
   padding: 9px;
   z-index: 2;
+}
+
+.sec2 .container .card .text .trait {
+  margin: 5px auto;
+  width: 30%;
 }
 
 #services .text {
@@ -791,6 +796,7 @@ header .onglets .btn:hover a {
   .sec2 {
     align-items: flex-start;
     height: auto;
+    overflow: hidden;
   }
   .sec2 .container .card {
     height: 65vh;
@@ -802,6 +808,7 @@ header .onglets .btn:hover a {
     flex-direction: column;
     align-items: center;
     margin: 40px auto;
+    overflow: hidden;
   }
 }
 
