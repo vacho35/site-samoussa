@@ -250,7 +250,15 @@ header .onglets .btn:hover a {
   background-color: #bc3b18;
   left: calc(50vmin + 10%);
   top: 0;
-  transform: translate(50% -50%);
+  animation-name: deroulement;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  transform-origin: top center;
+}
+
+@keyframes deroulement {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
 }
 
 .sec1::after {
@@ -261,6 +269,14 @@ header .onglets .btn:hover a {
   background-color: #bc3b18;
   left: 0px;
   top: 173px;
+  animation-name: apparition;
+  animation-duration: 4s;
+  transform-origin: left;
+}
+
+@keyframes apparition {
+  from { transform: translateX(-30px); }
+  to   { transform: translateX(0px); }
 }
 
 .welcome-text {
@@ -479,6 +495,7 @@ header .onglets .btn:hover a {
   left: 0;
   width: 100%;
   height: 200px;
+  overflow: hidden;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb037+0,f69204+100 */
   background: rgb(255, 176, 55); /* Old browsers */
   background: -moz-radial-gradient(
@@ -511,6 +528,7 @@ header .onglets .btn:hover a {
   left: 50%;
   transform: translate(-50%, -75%);
   background: #e2a857;
+  overflow: hidden;
 }
 
 .sec1 button .liquid::before {
