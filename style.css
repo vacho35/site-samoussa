@@ -624,8 +624,8 @@ header .onglets .btn:hover a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
+
 .sec2 .container .card {
   height: 100%;
   text-align: center;
@@ -961,7 +961,7 @@ header .onglets .btn:hover a {
   }
 
   .card .menus-text h4 {
-    font-size: 0.65em;
+    font-size: 1em;
   }
 }
 
