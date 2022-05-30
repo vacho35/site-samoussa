@@ -1205,7 +1205,7 @@ footer .text .text-left h3 {
 
 footer .text p,
 a {
-  font-size: calc(0.8vmin + 6px);
+  font-size: calc(1.2vmin + 6px);
   padding: 3.5px 0;
 }
 
@@ -1234,7 +1234,7 @@ footer .text-right a {
 
 footer .text-right ul a {
   display: block;
-  font-size: 0.5em;
+  font-size: 0.7em;
   font-weight: 300;
 }
 
