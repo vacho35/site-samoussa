@@ -843,9 +843,9 @@ header .onglets .btn:hover a {
 }
 
 .sec3 .image-resp {
-  margin: 3.5rem auto 5.5rem auto;
+  margin: 2.5rem auto 5.5rem;
   color: #111;
-  max-width: 900px;
+  max-width: 839px;
 }
 
 .sec3 .image-resp img {
@@ -869,11 +869,11 @@ header .onglets .btn:hover a {
 }
 .sec3 h2 {
   font-size: calc(3vmax + 15px);
-  margin-bottom: 4%;
+  margin-bottom: 40px;
   padding-top: 50px;
 }
 .sec3 .trait {
-  margin: 28px auto;
+  margin: 0 auto;
   width: calc(15vmax + 40px);
 }
 .card .menus-text h3 {
