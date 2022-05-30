@@ -270,10 +270,10 @@ header .onglets .btn:hover a {
   content: "";
   position: absolute;
   width: 14px;
-  height: 225px;
+  height: 234px;
   background-color: #bc3b18;
   left: 0px;
-  top: 173px;
+  top: 245px;
   animation-name: apparition;
   animation-duration: 4s;
   transform-origin: left;
@@ -287,7 +287,7 @@ header .onglets .btn:hover a {
 .welcome-text {
   flex-direction: column;
   display: inline-block;
-  margin: 135px 0px 0px 12%;
+  margin: 175px 0px 0px 12%;
   background: linear-gradient(
     107.12deg,
     rgba(0, 0, 0, 0.6) -29.95%,
@@ -297,7 +297,7 @@ header .onglets .btn:hover a {
     35px 35px 20px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 30px;
-  padding: 4px 44px 44px 44px;
+  padding: 39px 87px 76px;
 }
 
 .welcome-text::before {
@@ -322,7 +322,7 @@ header .onglets .btn:hover a {
 
 .sec1 h1 {
   color: rgb(255 183 82 / 82%);
-  font-size: calc(4vmin + 1.2em);
+  font-size: calc(6vmin + 1.2em);
   font-weight: 700;
   line-height: 118px;
   letter-spacing: 0.075em;
@@ -330,7 +330,7 @@ header .onglets .btn:hover a {
 }
 
 .welcome-text h2 {
-  font-size: calc(0.8vmin + 0.8em);
+  font-size: calc(1vmin + 0.8em);
   font-family: poppins, sans-serif;
   text-align: start;
   padding: 0;
@@ -405,7 +405,7 @@ header .onglets .btn:hover a {
   overflow: hidden;
   border-radius: 15px;
   border: none;
-  margin-top: 35px;
+  margin-top: 38px;
 }
 
 .sec1 button span {
@@ -843,11 +843,9 @@ header .onglets .btn:hover a {
 }
 
 .sec3 .image-resp {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2.5rem;
+  margin: 3.5rem auto 5.5rem auto;
   color: #111;
-  max-width: 60ch;
+  max-width: 900px;
 }
 
 .sec3 .image-resp img {
@@ -855,6 +853,7 @@ header .onglets .btn:hover a {
   margin-bottom: 1em;
   max-width: 100%;
   height: auto;
+  border-radius: 150px;
 }
 
 /* ********** Menus *********** */
@@ -941,7 +940,7 @@ header .onglets .btn:hover a {
 
 @media (min-width: 851px) {
   .sec3 h2 {
-    padding-top: 120px;
+    padding-top: 147px;
   }
 }
 
@@ -1190,7 +1189,7 @@ footer {
 footer .text {
   display: flex;
   align-items: center;
-  margin: 20px;
+  margin: 35px;
   justify-content: space-evenly;
   text-align: start;
 }
