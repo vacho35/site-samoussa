@@ -208,6 +208,9 @@ header .onglets .btn:hover a {
   header .main-logo {
     left: 94%;
   }
+  header .onglets {
+    margin-top: 10px;
+  }
   header .sous-onglets {
     flex-direction: column;
     align-items: center;
@@ -221,13 +224,15 @@ header .onglets .btn:hover a {
   header .onglets {
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
   header .onglets .btn {
     padding: 0.4px 10px;
     margin-top: 5px;
   }
-  header .onglets {
-    margin: 0 auto;
+  header .onglets a{
+    font-size: calc(2.5vmin + 5px);
+    margin: 6px;
   }
 }
 
@@ -347,12 +352,12 @@ header .onglets .btn:hover a {
 
 @media (max-width: 541px) {
   .sec1 {
-    height: 70vh;
+    height: 80vh;
   }
 
   .welcome-text {
     padding: 10px 15px 30px 30px;
-    margin: 50px 0px 0px 12%;
+    margin: 70px 0px 0px 12%;
   }
   .sec1::before {
     width: 100px;
@@ -360,7 +365,7 @@ header .onglets .btn:hover a {
     left: calc(40vmin + 10%);
   }
   .sec1::after {
-    top: 105px;
+    top: 124px;
     height: 187px;
     width: 9px;
 }
@@ -373,6 +378,9 @@ header .onglets .btn:hover a {
 }
 
 @media (max-width: 360px) {
+  .sec1 {
+    height: 60vh;
+  }
   .welcome-text {
     margin: 68px 0px 0px 12%;
   }
@@ -871,14 +879,14 @@ header .onglets .btn:hover a {
 }
 .card .menus-text h3 {
   padding: 0 15px;
-  font-size: calc(2.4vmin);
-  margin-bottom: 17px;
+  font-size: calc(3vmin);
+  margin-bottom: 10%;
 }
 .card .menus-text h4 {
   color: #f5f2ed;
   font-weight: 300;
-  font-size: calc(1.7vmin + 1px);
-  margin-bottom: 4%;
+  font-size: calc(2.2vmin + 1px);
+  margin-bottom: 2.5%;
 }
 .card .menus-text p {
   font-weight: 300;
