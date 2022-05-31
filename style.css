@@ -267,16 +267,16 @@ header .onglets .btn:hover a {
 }
 
 .sec1::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 234px;
-  background-color: #bc3b18;
-  left: 0px;
-  top: 245px;
-  animation-name: apparition;
-  animation-duration: 4s;
-  transform-origin: left;
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 227px;
+    background-color: #bc3b18;
+    left: 0px;
+    top: 239px;
+    animation-name: apparition;
+    animation-duration: 4s;
+    transform-origin: left;
 }
 
 @keyframes apparition {
@@ -287,7 +287,7 @@ header .onglets .btn:hover a {
 .welcome-text {
   flex-direction: column;
   display: inline-block;
-  margin: 175px 0px 0px 12%;
+  margin: 166px 0px 0px 12%;
   background: linear-gradient(
     107.12deg,
     rgba(0, 0, 0, 0.6) -29.95%,
@@ -322,7 +322,7 @@ header .onglets .btn:hover a {
 
 .sec1 h1 {
   color: rgb(255 183 82 / 82%);
-  font-size: calc(6vmin + 1.2em);
+  font-size: 8.5vmin;
   font-weight: 700;
   line-height: 118px;
   letter-spacing: 0.075em;
@@ -336,9 +336,6 @@ header .onglets .btn:hover a {
   padding: 0;
 }
 @media screen and (max-width: 850px) {
-  .sec1 {
-    height: 80vh;
-  }
   .sec1::after {
     top: 108px;
   }
@@ -843,9 +840,10 @@ header .onglets .btn:hover a {
 }
 
 .sec3 .image-resp {
-  margin: 2.5rem auto 5.5rem;
-  color: #111;
-  max-width: 839px;
+    margin: 2.5rem auto 3.5rem;
+    color: #111;
+    max-width: 800px;
+    width: 80%;
 }
 
 .sec3 .image-resp img {
