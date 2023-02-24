@@ -230,7 +230,7 @@ header .onglets .btn:hover a {
     padding: 0.4px 10px;
     margin-top: 5px;
   }
-  header .onglets a{
+  header .onglets a {
     font-size: calc(2.5vmin + 5px);
     margin: 6px;
   }
@@ -239,7 +239,7 @@ header .onglets .btn:hover a {
 /* ******** Main ********* */
 
 .sec1 {
-  background: url(images/assiette5.png);
+  background: url(images/samoussa/assiette5.webp);
   height: 100vh;
   background-position: 25% 0%;
   background-size: cover;
@@ -262,26 +262,34 @@ header .onglets .btn:hover a {
 }
 
 @keyframes deroulement {
-  from { transform: scaleY(0); }
-  to   { transform: scaleY(1); }
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 .sec1::after {
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 227px;
-    background-color: #bc3b18;
-    left: 0px;
-    top: 239px;
-    animation-name: apparition;
-    animation-duration: 4s;
-    transform-origin: left;
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 227px;
+  background-color: #bc3b18;
+  left: 0px;
+  top: 239px;
+  animation-name: apparition;
+  animation-duration: 4s;
+  transform-origin: left;
 }
 
 @keyframes apparition {
-  from { transform: translateX(-30px); }
-  to   { transform: translateX(0px); }
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 
 .welcome-text {
@@ -365,7 +373,7 @@ header .onglets .btn:hover a {
     top: 124px;
     height: 187px;
     width: 9px;
-}
+  }
   .sec1 h1 {
     font-size: calc(3vmin + 1.2em);
   }
@@ -590,7 +598,7 @@ header .onglets .btn:hover a {
 .sec2 {
   width: 100%;
   height: 110vh;
-  background-image: url(images/fond-resto-indien/fond-resto-classe-flou-compress.png);
+  background-image: url(images/fond-resto-indien/fond-resto-classe-flou-compress.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -650,7 +658,7 @@ header .onglets .btn:hover a {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-image: url(images/Singe-scooter/singecarre.png);
+  background-image: url(images/Singe-scooter/singecarre.webp);
   background-size: cover;
   backdrop-filter: blur(10px);
   background-position: 50% 0;
@@ -669,7 +677,7 @@ header .onglets .btn:hover a {
   height: 100%;
   z-index: 1;
   opacity: 1;
-  background-image: url(images/fond-resto-indien/farinne-main-resized-compress.jpg);
+  background-image: url(images/fond-resto-indien/farinne-main-resized-compress.webp);
   background-size: cover;
   background-position: center center;
 }
@@ -687,7 +695,7 @@ header .onglets .btn:hover a {
   height: 100%;
   z-index: 1;
   opacity: 0.85;
-  background-image: url(images/legumes/coupage-legumes-resized-compress.jpg);
+  background-image: url(images/legumes/coupage-legumes-resized-compress.webp);
   background-size: cover;
   background-position: center center;
 }
@@ -822,7 +830,7 @@ header .onglets .btn:hover a {
 /* ******** Header ******** */
 
 .body2 {
-  background-image: url(images/fond-resto-indien/fond-resto-verre-flou5.png);
+  background-image: url(images/fond-resto-indien/fond-resto-verre-flou5.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -840,10 +848,10 @@ header .onglets .btn:hover a {
 }
 
 .sec3 .image-resp {
-    margin: 2.5rem auto 3.5rem;
-    color: #111;
-    max-width: 800px;
-    width: 80%;
+  margin: 2.5rem auto 3.5rem;
+  color: #111;
+  max-width: 800px;
+  width: 80%;
 }
 
 .sec3 .image-resp img {
@@ -988,7 +996,10 @@ header .onglets .btn:hover a {
 /* ********* Section 5 et 6 Commande ********* */
 
 #body3 {
-  background-color: #2e3232;
+  background-image: url(images/fond-resto-indien/resto-asiat.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 #nav3 {
   background-color: rgba(21, 20, 20, 0.123);
@@ -996,7 +1007,7 @@ header .onglets .btn:hover a {
 .sec5 {
   width: 100%;
   height: 100vh;
-  background-image: url(images/Background/layered-waves-haikei.png);
+  background-image: url(images/Background/layered-waves-haikei.webp);
   background-size: cover;
   background-position: 50% 50%;
   padding-top: 100px;
@@ -1056,7 +1067,7 @@ header .onglets .btn:hover a {
   justify-content: center;
   text-align: center;
   height: 50%;
-  background-image: url(images/fond-resto-indien/stacked-waves-haikei.png);
+  background-image: url(images/fond-resto-indien/stacked-waves-haikei.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: top left;
@@ -1067,7 +1078,7 @@ header .onglets .btn:hover a {
   justify-content: center;
   text-align: center;
   height: 50%;
-  background-image: url(images/fond-resto-indien/stacked-waves-haikeiblue.png);
+  background-image: url(images/fond-resto-indien/stacked-waves-haikeiblue.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: top left;
@@ -1278,6 +1289,9 @@ footer .copyright {
   align-items: center;
   text-align: center;
 }
+footer .copyright a {
+  color: #e22b69;
+}
 
 footer .mini-trait {
   height: 1px;
@@ -1310,13 +1324,12 @@ hr {
 }
 
 @media (max-width: 700px) {
-  
-  footer .text-right{
+  footer .text-right {
     display: flex;
     flex-direction: column;
-    margin: 7px auto;      
-}
-footer .mini-text-right{
-  margin: 6px auto;      
-}
+    margin: 7px auto;
+  }
+  footer .mini-text-right {
+    margin: 6px auto;
+  }
 }
