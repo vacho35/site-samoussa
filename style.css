@@ -96,7 +96,7 @@ header .main-button {
 /* ********************************************        Hero         ********************************************* */
 
 .section1 {
-  background: url(images/new_main/back2.png) no-repeat center / cover;
+  background: url(images/new_main/back2.webp) no-repeat center / cover;
   height: 100vh;
   height: 100dvh;
   position: relative;
@@ -207,7 +207,7 @@ header .main-button {
   overflow: hidden;
 }
 .sec2 .container h2 {
-  font-size: 1.6em;
+  font-size: clamp(1rem, 3vw + 1rem, 1.3rem);
   line-height: 30px;
   padding: 8px 0;
   z-index: 2;
@@ -438,7 +438,7 @@ header .main-button {
   margin: 2.5rem auto 3.5rem;
   color: #111;
   max-width: 800px;
-  width: 80%;
+  width: 52%;
 }
 .sec3 .image-resp img {
   margin-top: 1em;
@@ -542,7 +542,7 @@ header .main-button {
     margin-right: auto;
   }
   .sec3 h2 {
-    padding-top: 120px;
+    padding-top: 100px;
   }
   .card .menus-text h3 {
     font-size: calc(2.3vmin + 1px);
@@ -776,22 +776,25 @@ footer {
 }
 footer .text {
   display: flex;
-  align-items: center;
   margin: 35px;
   justify-content: space-evenly;
   text-align: start;
 }
-footer .text .text-left h3 {
-  width: fit-content;
+footer .h3-border {
+  display: inline-block;
   font-weight: 400;
   border-bottom: solid #deac60;
   margin-bottom: 20px;
-  font-size: 1em;
+  font-size: clamp(0.4rem, 2vw + 0.6rem, 0.9rem);
 }
-footer .text p,
-a {
-  font-size: calc(1.2vmin + 6px);
-  padding: 3.5px 0;
+footer p, a{
+  font-size: clamp(0.4rem, 2vw + 0.6rem, 0.9rem);
+  padding: 4px 0;
+  display: inline-block;
+  font-weight: 500;
+}
+footer .space{
+  padding: 4px 0 4px 4px;
 }
 footer .text-left,
 .text-right {
@@ -799,22 +802,13 @@ footer .text-left,
   flex-direction: column;
   align-items: center;
 }
-footer .text-left span {
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 footer .text-right {
   display: flex;
   flex-direction: row;
 }
-footer .text-right a {
-  display: block;
-  font-weight: 500;
-}
-footer .text-right ul a {
-  display: block;
-  font-size: 0.7em;
+footer .mini-text ul a {
+  display: inline-block;
+  font-size: clamp(0.4rem, 2vw + 0.6rem, 0.9rem);
   font-weight: 300;
 }
 footer .mini-text-right {
@@ -851,11 +845,13 @@ footer .media li:hover {
   cursor: pointer;
   color: #deac60;
 }
+.copyright-container{
+  margin: 12px 0;
+}
 footer .copyright {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
-  font-size: calc(0.8vmin + 8px);
+  margin: 2px 0;
   align-items: center;
   text-align: center;
 }
