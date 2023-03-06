@@ -4,120 +4,189 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
     <!-- ********** Library ********** -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/0cfccd0bcd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0cfccd0bcd.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- ********* CSS ********* -->
     <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- ********* Flaticon *********** -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>La Samousserie livraison de samoussas frais sur Rennes métropole</title>
-    <meta name="description" content="La samousserie est un service de livraison de samoussas frais à domicile sur Rennes métropole ou à emporter">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>
+      La Samousserie livraison de samoussas frais sur Rennes métropole
+    </title>
+    <meta
+      name="description"
+      content="La samousserie est un service de livraison de samoussas frais à domicile sur Rennes métropole ou à emporter"
+    />
   </head>
   <body>
     <!-- ******************** Nav Bar ********************** -->
 
-    <header id="navbar" class="nav">
-        <h3><a href="index.html#sec1">La Samousserie</a></h3>
-        <div class="main-logo">
-          <a href="index.html#sec1"><img src="images/Singe-scooter/singe-modif31.webp" alt="Logo singe qui conduit un scooter"></a>
+    <header
+      id="navbar"
+      class="nav"
+      data-aos="fade-down"
+      data-aos-delay="500"
+      data-aos-duration="2200"
+      data-aos-easing="ease-in-out-back"
+    >
+      <div class="main-logo">
+        <a href="index.html"
+          ><img
+            src="images/new_main/singerecolor-512x512.png"
+            alt="Logo tête de singe avec une casquette"
+        /></a>
+      </div>
+      <div class="onglets">
+        <div class="sous-onglets">
+          <a href="index.html">Accueil</a>
+          <a href="index.html#sec2">Nos services</a>
+          <a href="menus.html">Menu</a>
+          <a href="#footer1">Contacts</a>
         </div>
-        <div class="onglets" >
-          <div class="sous-onglets">
-            <a href="index.html#sec1">Accueil</a>
-            <a href="index.html#sec2">Nos services</a>
-            <a href="menus.html">Menu</a>
-            <a href="#footer1">Contacts</a>
-          </div>
-          <div class="btn">
-            <a href="commande.html">Commander</a>
-          </div>
-        </div>
+        <button
+          class="main-button"
+          onclick="window.location.href = 'commande.html';"
+        >
+          Commander
+        </button>
+      </div>
     </header>
 
-    <!-- ********************* Main ******************* -->
-
-    <main id="main" class="main">
-      <section class="sec1" id="sec1">
-        <div class="welcome-text"  data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-in-out-back">
-            <h1>La Samousserie</h1>
-          <h2>Livraison de samoussas frais et fait maison <br>sur Rennes Métropole</h2>
-          <button onclick="window.location.href = 'commande.html';">
-            <span>Commander</span>
-            <div class="liquid"></div>
-          </button>         
+    <!-- ********************* Hero ******************* -->
+    <main id="hero" class="hero">
+      <section class="section1" id="section1">
+        <div class="texte-accueil">
+          <h1>LA SAMOUSSERIE</h1>
+          <h2>
+            Livraison de samoussas frais et fait maison sur Rennes métropole
+          </h2>
+          <button
+            class="main-button"
+            onclick="window.location.href = 'commande.html';"
+          >
+            Commander
+          </button>
         </div>
+        <div class="img-accueil"></div>
       </section>
+    </main>
 
-      <!-- ********************** Section 2 ***************** -->
+    <!-- ********************** Section 2 ***************** -->
 
-      <section class="sec2" id="sec2">
-        <div class="container">
-          <div class="card" id="services" data-aos="fade-right" data-aos-delay="0"  data-aos-duration="3000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="top-center" data-aos-offset="50">
-            <div class="text">
-              <h2>Nos services</h2>
-              <div class="trait"></div>
-              <p>
-                La Samousserie est un service de livraison à domicile ou à
-                emporter de samoussas frais et fait maison, prêts à être cuisiné sur tout RENNES Métropole.
-              </p>
+    <section class="sec2" id="sec2">
+      <div class="container">
+        <div
+          class="card"
+          id="services"
+          data-aos="fade-right"
+          data-aos-delay="0"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="top-center"
+          data-aos-offset="50"
+        >
+          <div class="text">
+            <h2>Nos services</h2>
+            <div class="trait"></div>
+            <p>
+              La Samousserie est un service de livraison à domicile ou à
+              emporter de samoussas frais et fait maison, prêts à être cuisiné
+              sur tout RENNES Métropole.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          id="savoir"
+          data-aos="fade-down"
+          data-aos-delay="0"
+          data-aos-duration="1800"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="top-center"
+          data-aos-offset="-50"
+        >
+          <div class="text">
+            <h2>Notre savoir-faire</h2>
+            <div class="trait"></div>
+            <p>
+              Tous nos samoussas sont préparés avec une pâte fraiche faite à la
+              main, selon une recette secrète transmise de génération en
+              génération.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          id="ingredients"
+          data-aos="fade-left"
+          data-aos-delay="00"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-out-back"
+          data-aos-anchor-placement="top-center"
+          data-aos-offset="60"
+        >
+          <div class="text">
+            <h2>Nos ingrédients</h2>
+            <div class="trait"></div>
+            <p>
+              Nous nous engageons à sélectionner des ingrédients de qualité
+              principalement bio. De plus toute la viande est 100% halal.
+            </p>
+            <div class="logos">
+              <img src="images/Logo/halal2.webp" alt="logo Halal" />
+              <img
+                src="images/Logo/Picto-Fait-Maison.webp"
+                alt="logo fait maison"
+              />
             </div>
           </div>
-          <div class="card" id="savoir" data-aos="fade-down" data-aos-delay="0"  data-aos-duration="1800" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="top-center" data-aos-offset="-50">
-            <div class="text">
-              <h2>Notre savoir-faire</h2>
-              <div class="trait"></div>
-              <p>
-                Tous nos samoussas sont préparés avec une pâte fraiche faite à
-                la main, selon une recette secrète transmise de génération en
-                génération.
-              </p>
-            </div>
-          </div>
-          <div class="card" id="ingredients" data-aos="fade-left" data-aos-delay="00"  data-aos-duration="3000" data-aos-easing="ease-in-out-back" data-aos-anchor-placement="top-center" data-aos-offset="60">
-            <div class="text">
-              <h2>Nos ingrédients</h2>
-              <div class="trait"></div>
-              <p>
-                Nous nous engageons à sélectionner des ingrédients de qualité
-                principalement bio. De plus toute la viande est 100% halal.
-              </p>
-              <div class="logos">
-                <img src="images/Logo/halal2.webp" alt="logo Halal" />
-                <img
-                  src="images/Logo/Picto-Fait-Maison.webp"
-                  alt="logo fait maison"
-                />
-              </div> 
-            </div>
-          </div>
-        </div>    
-      </section>
+        </div>
+      </div>
+    </section>
 
-<!-- *************** Footer ******************** -->
+    <!-- *************** Footer ******************** -->
 
     <footer class="footer" id="footer1">
       <div class="text">
-        <div class="text-left text-container" data-aos="fade-right" data-aos-delay="2700"  data-aos-duration="1500" data-aos-easing="ease-out-back">
-          
+        <div
+          class="text-left text-container"
+          data-aos="fade-right"
+          data-aos-delay="2700"
+          data-aos-duration="1500"
+          data-aos-easing="ease-out-back"
+        >
           <div class="mini-text-left">
             <h3>Contacts :</h3>
-            <span>TEL  :  </span><a href="tel:+33774046486">07 74 04 64 86</a><br>
-          <span>Email  :  </span><a href="mailto:lasamousserie@gmail.com">lasamousserie@gmail.com</a>
+            <span>TEL : </span><a href="tel:+33774046486">07 74 04 64 86</a
+            ><br />
+            <span>Email : </span
+            ><a href="mailto:lasamousserie@gmail.com"
+              >lasamousserie@gmail.com</a
+            >
             <p></p>
-          </div>          
+          </div>
         </div>
-        <div class="text-right text-container" >
-          <div class="text-right-first mini-text-right" data-aos="fade-down" data-aos-delay="100" data-aos-easing="ease-in-out-back" data-aos-duration="1500">
+        <div class="text-right text-container">
+          <div
+            class="text-right-first mini-text-right"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out-back"
+            data-aos-duration="1500"
+          >
             <a href="index.html#sec2">Qui sommes nous ?</a>
             <ul>
               <li><a href="index.html#sec2">- Nos services</a></li>
@@ -125,7 +194,13 @@
               <li><a href="index.html#sec2">- Nos ingrédients</a></li>
             </ul>
           </div>
-          <div class="text-right-second mini-text-right" data-aos="fade-down" data-aos-delay="700" data-aos-easing="ease-in-out-back" data-aos-duration="1500">
+          <div
+            class="text-right-second mini-text-right"
+            data-aos="fade-down"
+            data-aos-delay="700"
+            data-aos-easing="ease-in-out-back"
+            data-aos-duration="1500"
+          >
             <a href="menus.html">Menus</a>
             <ul>
               <li><a href="menus.html#samoussas-boeuf">- Samoussas</a></li>
@@ -133,44 +208,93 @@
               <li><a href="menus.html#sauce-chocolat">- Sauces</a></li>
             </ul>
           </div>
-          <div class="text-right-third mini-text-right" data-aos="fade-down"  data-aos-delay="1700" data-aos-easing="ease-out-back" data-aos-duration="1500">
+          <div
+            class="text-right-third mini-text-right"
+            data-aos="fade-down"
+            data-aos-delay="1700"
+            data-aos-easing="ease-out-back"
+            data-aos-duration="1500"
+          >
             <a href="commande.html">Foire aux questions</a>
             <ul>
               <li><a href="commande.html#sec5">- Comment commander ?</a></li>
               <li><a href="commande.html#sec5">- Comment Payer ?</a></li>
               <li><a href="commande.html#sec6">- Où livrons nous ?</a></li>
             </ul>
-          </div>  
-          <div class="text-right-third mini-text-right" data-aos="fade-down"  data-aos-delay="2100" data-aos-easing="ease-out-back" data-aos-duration="1500"> 
+          </div>
+          <div
+            class="text-right-third mini-text-right"
+            data-aos="fade-down"
+            data-aos-delay="2100"
+            data-aos-easing="ease-out-back"
+            data-aos-duration="1500"
+          >
             <a href="index.html#sec2">Informations légales</a>
             <ul>
-              <li><a href="#footer1">- Mentions légales</a> </li>
+              <li><a href="#footer1">- Mentions légales</a></li>
               <li><a href="#footer1">- CGV</a></li>
-              <li><a href="#footer1">- Politique de protection des données personnelles</a></li>
-            </ul>        
-            
-          </div>                   
+              <li>
+                <a href="#footer1"
+                  >- Politique de protection des données personnelles</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-        <div class="media">
-          <div class="mini-trait" ></div>
-          <div class="media-logos">
+      <div class="media">
+        <div class="mini-trait"></div>
+        <div class="media-logos">
           <ul>
-            <li><a href="https://www.instagram.com/speedmakieat/"><img src="images/resaux-sociaux/snap-blanc.png" alt="logo snapchat"></a></li>
-            <li><a href="https://www.instagram.com/speedmakieat/"><img src="images/resaux-sociaux/pngegg.png" alt="logo instagram"></a></li>
-            <li><a href="https://t.me/Lauret05"><img src="images/resaux-sociaux/telegram10.png" alt="logo telegram"></a></li>
-            <li><a href="https://www.tiktok.com/@speedmakieat35"><img src="images/resaux-sociaux/White-TikTok-Logo.png" alt="logo tiktok"></a></li>
+            <li>
+              <a href="https://www.instagram.com/speedmakieat/"
+                ><img
+                  class="rs rs1"
+                  src="images/resaux-sociaux/snap-blanc.png"
+                  alt="logo snapchat"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/speedmakieat/"
+                ><img
+                  class="rs rs2"
+                  src="images/resaux-sociaux/pngegg.png"
+                  alt="logo instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://t.me/Lauret05"
+                ><img
+                  class="rs rs3"
+                  src="images/resaux-sociaux/telegram10.png"
+                  alt="logo telegram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@speedmakieat35"
+                ><img
+                  class="rs rs4"
+                  src="images/resaux-sociaux/White-TikTok-Logo.png"
+                  alt="logo tiktok"
+              /></a>
+            </li>
           </ul>
         </div>
-          <div class="mini-trait"></div>
-        </div>
-        <hr>
-        <div class="copyright">
-          <p>© 2022-2023 <a href="https://la-samousserie.shop">La Samousserie.</a> Tous droits réservés</p>          
-        </div>
-        <div class="copyright">
-          <p>Site réalisé par <a href="mailto:toronto35@outlook.fr">Borderline</a></p>
-        </div>
+        <div class="mini-trait"></div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>
+          © 2022-2023
+          <a href="https://la-samousserie.shop">La Samousserie.</a> Tous droits
+          réservés
+        </p>
+      </div>
+      <div class="copyright">
+        <p>
+          Site réalisé par <a href="mailto:toronto35@outlook.fr">Borderline</a>
+        </p>
+      </div>
     </footer>
     <script>
       AOS.init();
