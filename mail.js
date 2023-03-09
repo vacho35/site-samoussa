@@ -2,7 +2,7 @@
 
 function sendMail() {
     var params = {
-      blaze: document.getElementById("blaze").value,
+      nom: document.getElementById("nom").value,
       email: document.getElementById("email").value,
       number: document.getElementById("number").value,
       boeufs: document.getElementById("samoussas_boeuf").value,
@@ -23,7 +23,7 @@ function sendMail() {
   
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
-          document.getElementById("blaze").value = "";
+          document.getElementById("nom").value = "";
           document.getElementById("email").value = "";
           document.getElementById("number").value = "";
           document.getElementById("samoussas_boeuf").value = "";

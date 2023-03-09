@@ -13,16 +13,16 @@
     ></script>
 
     <!-- ********* CSS ********* -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- ********* Flaticon *********** -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
     <!-- ******************** Redirection ********************** -->
     <link rel="canonical" href="https://la-samousserie.shop/commande.html" />
@@ -49,25 +49,34 @@
   <body id="body3">
     <!-- ********** NavBar ******** -->
 
-    <header id="navbar" class="nav">
-      <h3><a href="index.html">La Samousserie</a></h3>
+    <header
+      id="navbar"
+      class="nav"
+      data-aos="fade-down"
+      data-aos-delay="500"
+      data-aos-duration="2200"
+      data-aos-easing="ease-in-out-back"
+    >
       <div class="main-logo">
-        <a href="index.html"
+        <a href="./index.html"
           ><img
-            src="images/Singe-scooter/singe-modif31.webp"
-            alt="Logo singe qui conduit un scooter"
+            src="./images/new_main/singerecolor-512x512.png"
+            alt="Logo tête de singe avec une casquette"
         /></a>
       </div>
       <div class="onglets">
         <div class="sous-onglets">
-          <a href="index.html">Accueil</a>
-          <a href="index.html#sec2">Nos services</a>
-          <a href="menus.html">Menu</a>
-          <a href="#footer3">Contacts</a>
+          <a href="./index.html">Accueil</a>
+          <a href="./index.html#sec2">Nos services</a>
+          <a href="./menus.html">Menu</a>
+          <a href="./#footer2">Contacts</a>
         </div>
-        <div class="btn">
-          <a href="commande.html">Commander</a>
-        </div>
+        <button
+          class="main-button"
+          onclick="window.location.href = 'commande.html';"
+        >
+          Commander
+        </button>
       </div>
     </header>
 
@@ -75,172 +84,177 @@
 
     <section class="section-formulaire">
       <div class="form-container">
+        <h1>Formulaire de commande</h1>
         <form>
-          <div class="info-perso">
-            <h2 class="h2-resp">Infos personnelles</h2>
-            <div class="trait"></div>
-            <input
-              class="input-text"
-              type="text"
-              id="blaze"
-              placeholder="Votre blaze"
-              required
-            /><br />
-            <input
-              class="input-text"
-              type="email"
-              id="email"
-              placeholder="Votre email"
-              required
-            /><br />
-            <input
-              class="input-text"
-              type="number"
-              id="number"
-              placeholder="Votre numero"
-              required
-            /><br />
-          </div>
-          <div class="container_detail_commande"></div>
-          <h2 class="h2-resp">Details commande</h2>
-          <div class="trait"></div>
-          <div class="detail_commande">
-            <div class="form_samoussas bloc-form">
-              <h3>Samoussas</h3>
-              <div class="mini-bloc-form">
-                <label for="samoussas_boeuf">Samoussas Boeuf</label>
-                <select id="samoussas_boeuf">
-                  <option value="0_boeufs" selected>Aucun</option>
-                  <option value="12_boeufs">12 pièces</option>
-                  <option value="24_boeufs">24 pièces</option>
-                  <option value="36_boeufs">36 pièces</option>
-                  <option value="48_boeufs">48 pièces</option>
-                </select>
-              </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="samoussas_boeuf">Samoussas Boeuf</label>
-                <select id="samoussas_boeuf">
-                  <option value="0_boeufs" selected>Aucun</option>
-                  <option value="12_boeufs">12 pièces</option>
-                  <option value="24_boeufs">24 pièces</option>
-                  <option value="36_boeufs">36 pièces</option>
-                  <option value="48_boeufs">48 pièces</option>
-                </select>
-              </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="samoussas_volaille">Samoussas Volaille</label>
-                <select id="samoussas_volaille">
-                  <option value="0_volaille" selected>Aucun</option>
-                  <option value="12_volailles">12 pièces</option>
-                  <option value="24_volailles">24 pièces</option>
-                  <option value="36_volailles">36 pièces</option>
-                  <option value="48_volailles">48 pièces</option>
-                </select>
-              </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="samoussas_legume">Samoussas légumes</label>
-                <select id="samoussas_legume">
-                  <option value="0_legume" selected>Aucun</option>
-                  <option value="12_legumes">12 pièces</option>
-                  <option value="24_legumes">24 pièces</option>
-                  <option value="36_legumes">36 pièces</option>
-                  <option value="48_legumes">48 pièces</option>
-                </select>
-              </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="samoussas_poisson">Samoussas poisson</label>
-                <select id="samoussas_poisson">
-                  <option value="0_poisson" selected>Aucun</option>
-                  <option value="12_poissons">12 pièces</option>
-                  <option value="24_poissons">24 pièces</option>
-                  <option value="36_poissons">36 pièces</option>
-                  <option value="48_poissons">48 pièces</option>
-                </select>
-              </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="samoussas_chevre">Samoussas chèvre miel</label>
-                <select id="samoussas_chevre">
-                  <option value="0_chevre" selected>Aucun</option>
-                  <option value="5_chevre">5 pièces</option>
-                  <option value="10_chevre">10 pièces</option>
-                  <option value="15_chevre">15 pièces</option>
-                  <option value="20_chevre">20 pièces</option>
-                </select>
-              </div>
-              <br />
+          <div class="first-bloc-form">
+            <div class="info-perso">
+              <h2 class="h2-resp">Infos personnelles</h2>
+              <input
+                class="input-text"
+                type="text"
+                id="blaze"
+                placeholder="Votre nom"
+                required
+              /><br />
+              <input
+                class="input-text"
+                type="email"
+                id="email"
+                placeholder="Votre email"
+                required
+              /><br />
+              <input
+                class="input-text"
+                type="number"
+                id="number"
+                placeholder="Votre numero"
+                required
+              /><br />
             </div>
-            <div class="form_desserts bloc-form">
-              <h3>Desserts</h3>
-              <div class="mini-bloc-form">
-                <label for="beignet_nature">Beignets Nature</label>
-                <select id="beignet_nature">
-                  <option value="0_beignet_nature" selected>Aucun</option>
-                  <option value="5_beignet_nature">5 pièces</option>
-                  <option value="10_beignet_nature">10 pièces</option>
-                  <option value="15_beignet_nature">15 pièces</option>
-                  <option value="20_beignet_nature">20 pièces</option>
-                </select>
+            <div class="detail-commande">
+              <h2 class="h2-resp">Détails commande</h2>
+              <div class="food-form">
+                <div class="form_samoussas bloc-form">
+                  <div class="mini-bloc-form">
+                    <label for="samoussas_boeuf">Samoussas Boeuf</label>
+                    <select id="samoussas_boeuf">
+                      <option value="0_boeufs" selected>Aucun</option>
+                      <option value="12_boeufs">12 pièces</option>
+                      <option value="24_boeufs">24 pièces</option>
+                      <option value="36_boeufs">36 pièces</option>
+                      <option value="48_boeufs">48 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="samoussas_boeuf">Samoussas Boeuf</label>
+                    <select id="samoussas_boeuf">
+                      <option value="0_boeufs" selected>Aucun</option>
+                      <option value="12_boeufs">12 pièces</option>
+                      <option value="24_boeufs">24 pièces</option>
+                      <option value="36_boeufs">36 pièces</option>
+                      <option value="48_boeufs">48 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="samoussas_volaille">Samoussas Volaille</label>
+                    <select id="samoussas_volaille">
+                      <option value="0_volaille" selected>Aucun</option>
+                      <option value="12_volailles">12 pièces</option>
+                      <option value="24_volailles">24 pièces</option>
+                      <option value="36_volailles">36 pièces</option>
+                      <option value="48_volailles">48 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="samoussas_legume">Samoussas légumes</label>
+                    <select id="samoussas_legume">
+                      <option value="0_legume" selected>Aucun</option>
+                      <option value="12_legumes">12 pièces</option>
+                      <option value="24_legumes">24 pièces</option>
+                      <option value="36_legumes">36 pièces</option>
+                      <option value="48_legumes">48 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="samoussas_poisson">Samoussas poisson</label>
+                    <select id="samoussas_poisson">
+                      <option value="0_poisson" selected>Aucun</option>
+                      <option value="12_poissons">12 pièces</option>
+                      <option value="24_poissons">24 pièces</option>
+                      <option value="36_poissons">36 pièces</option>
+                      <option value="48_poissons">48 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="samoussas_chevre">Samoussas chèvre miel</label>
+                    <select id="samoussas_chevre">
+                      <option value="0_chevre" selected>Aucun</option>
+                      <option value="5_chevre">5 pièces</option>
+                      <option value="10_chevre">10 pièces</option>
+                      <option value="15_chevre">15 pièces</option>
+                      <option value="20_chevre">20 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                </div>
+                <div class="form_desserts bloc-form">
+                  <div class="mini-bloc-form">
+                    <label for="beignet_nature">Beignets Nature</label>
+                    <select id="beignet_nature">
+                      <option value="0_beignet_nature" selected>Aucun</option>
+                      <option value="5_beignet_nature">5 pièces</option>
+                      <option value="10_beignet_nature">10 pièces</option>
+                      <option value="15_beignet_nature">15 pièces</option>
+                      <option value="20_beignet_nature">20 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="beignet_banane">Beignets Banane</label>
+                    <select id="beignet_banane">
+                      <option value="0_beignet_banane" selected>Aucun</option>
+                      <option value="5_beignet_banane">5 pièces</option>
+                      <option value="10_beignet_banane">10 pièces</option>
+                      <option value="15_beignet_banane">15 pièces</option>
+                      <option value="20_beignet_banane">20 pièces</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="sauce_chocolat">Sauce chocolat</label>
+                    <select id="sauce_chocolat">
+                      <option value="0_sauce_chocolat" selected>Aucune</option>
+                      <option value="1_sauce_chocolat">1</option>
+                      <option value="2_sauce_chocolat">2</option>
+                      <option value="3_sauce_chocolat">3</option>
+                      <option value="4_sauce_chocolat">4</option>
+                      <option value="5_sauce_chocolat">5</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="mini-bloc-form">
+                    <label for="sauce_coco">Sauce Coco Vanille Canelle</label>
+                    <select id="sauce_coco">
+                      <option value="0_sauce_coco" selected>Aucune</option>
+                      <option value="1_sauce_coco">1</option>
+                      <option value="2_sauce_coco">2</option>
+                      <option value="3_sauce_coco">3</option>
+                      <option value="4_sauce_coco">4</option>
+                      <option value="5_sauce_coco">5</option>
+                    </select>
+                  </div>
+                  <br />
+                </div>
               </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="beignet_banane">Beignets Banane</label>
-                <select id="beignet_banane">
-                  <option value="0_beignet_banane" selected>Aucun</option>
-                  <option value="5_beignet_banane">5 pièces</option>
-                  <option value="10_beignet_banane">10 pièces</option>
-                  <option value="15_beignet_banane">15 pièces</option>
-                  <option value="20_beignet_banane">20 pièces</option>
-                </select>
-              </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="sauce_chocolat">Sauce chocolat</label>
-                <select id="sauce_chocolat">
-                  <option value="0_sauce_chocolat" selected>Aucune</option>
-                  <option value="1_sauce_chocolat">1</option>
-                  <option value="2_sauce_chocolat">2</option>
-                  <option value="3_sauce_chocolat">3</option>
-                  <option value="4_sauce_chocolat">4</option>
-                  <option value="5_sauce_chocolat">5</option>
-                </select>
-              </div>
-              <br />
-              <div class="mini-bloc-form">
-                <label for="sauce_coco">Sauce Coco Vanille Canelle</label>
-                <select id="sauce_coco">
-                  <option value="0_sauce_coco" selected>Aucune</option>
-                  <option value="1_sauce_coco">1</option>
-                  <option value="2_sauce_coco">2</option>
-                  <option value="3_sauce_coco">3</option>
-                  <option value="4_sauce_coco">4</option>
-                  <option value="5_sauce_coco">5</option>
-                </select>
-              </div>
-              <br />
             </div>
           </div>
-          <h3>Mode de paiement préféré</h3>
-          <select id="paiement">
-            <option value="espece" selected>Espèces</option>
-            <option value="paypal">Paypal</option>
-            <option value="bitcoin">Bitcoin</option>
-            <option value="pieces_d_or">Pièces d'or</option></select
-          ><br />
-          <h3>Message à ajouter</h3>
-          <textarea
-            class="input-text"
-            name="message"
-            id="message"
-            rows="4"
-            placeholder="Votre message"
-          ></textarea>
+          <div class="fin-form">
+            <h3>Méthode de paiement préféré</h3>
+            <select id="paiement">
+              <option value="espece" selected>Espèces</option>
+              <option value="paypal">Paypal</option>
+              <option value="bitcoin">Bitcoin</option>
+              <option value="pieces_d_or">Pièces d'or</option></select
+            ><br />
+            <h3>Message à ajouter</h3>
+            <textarea
+              class="input-text"
+              name="message"
+              id="message"
+              rows="6"
+              cols="80"
+              placeholder="Votre message"
+            ></textarea>
+          </div>
         </form>
-        <button id="send-button" onclick="sendMail()">Envoyer commande</button>
+        <button class="main-button" id="send-button" onclick="sendMail()">
+          Envoyer commande
+        </button>
         <div class="contact">
           <a href="boss@la-samousserie.shop">✉️ boss@la-samousserie.shop</a>
           <a href="tel:0299335544">📞 0299335544</a>
@@ -251,38 +265,38 @@
     <!-- ********** Section5 FAQ ********* -->
 
     <section class="sec5" id="sec5">
-      <h2 class="h2-resp">Commander</h2>
+      <h2 class="h2-resp">Comment commander</h2>
       <div class="trait"></div>
       <div class="faq-content">
         <div class="card">
           <h3>Comment puis-je commander ?</h3>
           <ul>
+            <li>- Par le formulaire du site</li>
+            <br />
             <li>- Nous appeler par téléphone</li>
             <img
               id="telephone"
-              src="images/resaux-sociaux/telephon-white.png"
+              src="./images/resaux-sociaux/telephon-white.png"
               alt="logo telephone"
             /><br />
             <li>- Nous contacter par Snapshat</li>
             <img
               id="snap"
-              src="images/resaux-sociaux/snap4.png"
+              src="./images/resaux-sociaux/snap4.png"
               alt="logo snapshat"
             /><br />
             <li>- Nous contacter par Instagram</li>
             <img
               id="insta"
-              src="images/resaux-sociaux/insta2.png"
+              src="./images/resaux-sociaux/insta2.png"
               alt="logo instagram"
             /><br />
             <li>- Nous contacter par Telegram</li>
             <img
               id="telegram"
-              src="images/resaux-sociaux/telegram.png"
+              src="./images/resaux-sociaux/telegram.png"
               alt="logo telegram"
             /><br />
-            <li>- En faisant une demande par le site (à venir)</li>
-            <br />
           </ul>
         </div>
         <div class="card">
@@ -291,24 +305,24 @@
             <li>- Espèces</li>
             <img
               id="espece"
-              src="images/resaux-sociaux/espece3.png"
+              src="./images/resaux-sociaux/espece3.png"
               alt="logo paiement espèces"
             /><br />
             <li>- Paypal</li>
             <img
               id="paypal"
-              src="images/resaux-sociaux/paypal2.png"
+              src="./images/resaux-sociaux/paypal2.png"
               alt="logo paiement paypal"
             /><br />
             <li>- Bitcoin</li>
             <img
               id="bitcoin"
-              src="images/resaux-sociaux/bitcoin-blanc.png"
+              src="./images/resaux-sociaux/bitcoin-blanc.png"
               alt="logo bitcoin"
             /><br />
             <li>- Lingot d'or</li>
             <img
-              src="images/resaux-sociaux/lingots.png"
+              src="./images/resaux-sociaux/lingots.png"
               alt="logo lingot d'or"
             /><br />
           </ul>
@@ -318,17 +332,17 @@
           <ul>
             <li>- Livraison à domicile</li>
             <img
-              src="images/resaux-sociaux/livraison.png"
+              src="./images/resaux-sociaux/livraison.png"
               alt="logo livraison à domicile"
             /><br />
             <li>- Vente à emporter</li>
             <img
-              src="images/resaux-sociaux/emporter.png"
+              src="./images/resaux-sociaux/emporter.png"
               alt="logo commande à emporter"
             /><br />
             <li>- Click and collect</li>
             <img
-              src="images/resaux-sociaux/click-and-collect.png"
+              src="./images/resaux-sociaux/click-and-collect.png"
               alt="logo click and collect"
             /><br />
           </ul>
@@ -362,7 +376,7 @@
 
     <!-- ********** Footer ********** -->
 
-    <footer class="footer" id="footer3">
+    <footer class="footer" id="footer1">
       <div class="text">
         <div
           class="text-left text-container"
@@ -372,14 +386,19 @@
           data-aos-easing="ease-out-back"
         >
           <div class="mini-text-left">
-            <h3>Contacts :</h3>
-            <span>TEL : </span><a href="tel:+33774046486">07 74 04 64 86</a
-            ><br />
-            <span>Email : </span
-            ><a href="mailto:lasamousserie@gmail.com"
-              >lasamousserie@gmail.com</a
-            >
-            <p></p>
+            <h3><a href="./#footer1">Contacts :</a></h3>
+            <ul>
+              <li>
+                <p>TEL :</p>
+                <a href="tel:+33774046486">07 74 04 64 86</a>
+              </li>
+              <li>
+                <p>Email :</p>
+                <a href="mailto:lasamousserie@gmail.com"
+                  >lasamousserie@gmail.com</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
         <div class="text-right text-container">
@@ -390,11 +409,11 @@
             data-aos-easing="ease-in-out-back"
             data-aos-duration="1500"
           >
-            <a href="index.html#sec2">Qui sommes nous ?</a>
+            <h3><a href="./index.html#sec2">Qui sommes nous ?</a></h3>
             <ul>
-              <li><a href="index.html#sec2">- Nos services</a></li>
-              <li><a href="index.html#sec2">- Notre savoir-faire</a></li>
-              <li><a href="index.html#sec2">- Nos ingrédients</a></li>
+              <li><a href="./index.html#sec2">- Nos services</a></li>
+              <li><a href="./index.html#sec2">- Notre savoir-faire</a></li>
+              <li><a href="./index.html#sec2">- Nos ingrédients</a></li>
             </ul>
           </div>
           <div
@@ -404,11 +423,11 @@
             data-aos-easing="ease-in-out-back"
             data-aos-duration="1500"
           >
-            <a href="menus.html">Menus</a>
+            <h3><a href="./menus.html">Menus</a></h3>
             <ul>
-              <li><a href="menus.html#samoussas-boeuf">- Samoussas</a></li>
-              <li><a href="menus.html#sec4">- Desserts</a></li>
-              <li><a href="menus.html#sauce-chocolat">- Sauces</a></li>
+              <li><a href="./menus.html#samoussas-boeuf">- Samoussas</a></li>
+              <li><a href="./menus.html#sec4">- Desserts</a></li>
+              <li><a href="./menus.html#sauce-chocolat">- Sauces</a></li>
             </ul>
           </div>
           <div
@@ -418,11 +437,11 @@
             data-aos-easing="ease-out-back"
             data-aos-duration="1500"
           >
-            <a href="commande.html">Foire aux questions</a>
+            <h3><a href="./commande.html">Foire aux questions</a></h3>
             <ul>
-              <li><a href="commande.html#sec5">- Comment commander ?</a></li>
-              <li><a href="commande.html#sec5">- Comment Payer ?</a></li>
-              <li><a href="commande.html#sec6">- Où livrons nous ?</a></li>
+              <li><a href="./commande.html#sec5">- Comment commander ?</a></li>
+              <li><a href="./commande.html#sec5">- Comment Payer ?</a></li>
+              <li><a href="./commande.html#sec6">- Où livrons nous ?</a></li>
             </ul>
           </div>
           <div
@@ -432,12 +451,12 @@
             data-aos-easing="ease-out-back"
             data-aos-duration="1500"
           >
-            <a href="index.html#sec2">Informations légales</a>
+            <h3><a href="./index.html#sec2">Informations légales</a></h3>
             <ul>
-              <li><a href="#footer3">- Mentions légales</a></li>
-              <li><a href="#footer3">- CGV</a></li>
+              <li><a href="./#footer1">- Mentions légales</a></li>
+              <li><a href="./#footer1">- CGV</a></li>
               <li>
-                <a href="#footer3"
+                <a href="./#footer1"
                   >- Politique de protection des données personnelles</a
                 >
               </li>
@@ -449,31 +468,31 @@
         <div class="mini-trait"></div>
         <div class="media-logos">
           <ul>
-            <li>
+            <li class="rs rs1">
               <a href="https://www.instagram.com/speedmakieat/"
                 ><img
-                  src="images/resaux-sociaux/snap-blanc.png"
+                  src="./images/resaux-sociaux/snap-blanc.png"
                   alt="logo snapchat"
               /></a>
             </li>
-            <li>
+            <li class="rs rs2">
               <a href="https://www.instagram.com/speedmakieat/"
                 ><img
-                  src="images/resaux-sociaux/pngegg.png"
+                  src="./images/resaux-sociaux/pngegg.png"
                   alt="logo instagram"
               /></a>
             </li>
-            <li>
+            <li class="rs rs3">
               <a href="https://t.me/Lauret05"
                 ><img
                   src="images/resaux-sociaux/telegram10.png"
                   alt="logo telegram"
               /></a>
             </li>
-            <li>
+            <li class="rs rs4">
               <a href="https://www.tiktok.com/@speedmakieat35"
                 ><img
-                  src="images/resaux-sociaux/White-TikTok-Logo.png"
+                  src="./images/resaux-sociaux/White-TikTok-Logo.png"
                   alt="logo tiktok"
               /></a>
             </li>
@@ -495,7 +514,7 @@
         </p>
       </div>
     </footer>
-    <script src="/mail.js"></script>
+    <script src="./mail.js"></script>
 
     <script>
       AOS.init();
