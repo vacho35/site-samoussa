@@ -690,14 +690,14 @@ select#paiement {
   margin: 0;
 }
 .input-text {
-  font-weight: bolder;
+  font-weight: bold;
   border-radius: 10px;
-  width: 150px;
+  width: 178px;
   outline: none;
   border: none;
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-size: clamp(0.2rem, 0.5vw + 0.4rem, 0.8rem);
-  height: 23px;
+  height: 28px;
 }
 .input-text:focus-visible {
   background-color: #f6e6cd;
